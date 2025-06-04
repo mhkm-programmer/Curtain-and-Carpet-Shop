@@ -14,14 +14,12 @@ const ContactBubble = () => {
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [showScrollBottom, setShowScrollBottom] = useState(true);
 
-  // Check screen size
+  // Detect screen size
   useEffect(() => {
-    const checkScreenSize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-    checkScreenSize();
-    window.addEventListener("resize", checkScreenSize);
-    return () => window.removeEventListener("resize", checkScreenSize);
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   // Handle scroll visibility
@@ -39,39 +37,48 @@ const ContactBubble = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Scroll functions
-  const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
+  // Scroll handlers
+  const scrollToTop = () =>
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
   const scrollToBottom = () =>
     window.scrollTo({ top: document.documentElement.scrollHeight, behavior: "smooth" });
 
+  // Bubble icon size
+  const iconSize = isMobile ? 22 : 26;
+
+  // Reusable button class
+  const baseBtnClass =
+    "p-3 md:p-4 rounded-full text-white shadow-lg hover:scale-110 transition-transform duration-300";
+
   return (
     <>
-      {/* 🟢 Contact Bubble - No Longer Draggable */}
-      <div className="fixed bottom-32 right-5 flex flex-col items-center space-y-3 z-50">
+      {/* 📞 Contact Buttons */}
+      <div className="fixed bottom-32 right-4 md:right-6 flex flex-col items-center space-y-3 z-50">
         {/* WhatsApp */}
         <a
           href="https://wa.me/+97455760872"
           target="_blank"
           rel="noopener noreferrer"
-          className="p-4 rounded-full text-white bg-green-500 hover:bg-green-600 shadow-md transition"
+          className={`${baseBtnClass} bg-green-500 hover:bg-green-600`}
         >
-          <FaWhatsapp size={isMobile ? 22 : 28} />
+          <FaWhatsapp size={iconSize} />
         </a>
 
         {/* Phone */}
         <a
           href="tel:+97455760872"
-          className="p-4 rounded-full text-white bg-blue-500 hover:bg-blue-600 shadow-md transition"
+          className={`${baseBtnClass} bg-blue-500 hover:bg-blue-600`}
         >
-          <FaPhoneAlt size={isMobile ? 22 : 28} />
+          <FaPhoneAlt size={iconSize} />
         </a>
 
         {/* Email */}
         <a
           href="mailto:qatarwintrading@gmail.com"
-          className="p-4 rounded-full text-white bg-red-500 hover:bg-red-600 shadow-md transition"
+          className={`${baseBtnClass} bg-red-500 hover:bg-red-600`}
         >
-          <FaEnvelope size={isMobile ? 22 : 28} />
+          <FaEnvelope size={iconSize} />
         </a>
 
         {/* Instagram */}
@@ -79,9 +86,9 @@ const ContactBubble = () => {
           href="https://www.instagram.com/rokibwin?igsh=anU3ejd4dHFneDhi"
           target="_blank"
           rel="noopener noreferrer"
-          className="p-4 rounded-full text-white bg-pink-500 hover:bg-pink-600 shadow-md transition"
+          className={`${baseBtnClass} bg-pink-500 hover:bg-pink-600`}
         >
-          <FaInstagram size={isMobile ? 22 : 28} />
+          <FaInstagram size={iconSize} />
         </a>
 
         {/* Facebook */}
@@ -89,29 +96,29 @@ const ContactBubble = () => {
           href="https://www.facebook.com/profile.php?id=61573137238181&mibextid=ZbWKwL"
           target="_blank"
           rel="noopener noreferrer"
-          className="p-4 rounded-full text-white bg-blue-700 hover:bg-blue-800 shadow-md transition"
+          className={`${baseBtnClass} bg-blue-700 hover:bg-blue-800`}
         >
-          <FaFacebook size={isMobile ? 22 : 28} />
+          <FaFacebook size={iconSize} />
         </a>
       </div>
 
-      {/* 🔵 Scroll to Top Button */}
+      {/* 🔼 Scroll to Top */}
       {showScrollTop && (
         <button
-          className="fixed bottom-16 right-5 bg-gray-800 text-white p-3 rounded-full shadow-md hover:bg-gray-900 transition"
           onClick={scrollToTop}
+          className="fixed bottom-20 right-4 md:right-6 bg-gray-800 text-white p-3 rounded-full shadow-lg hover:bg-gray-900 hover:scale-110 transition-transform duration-300 z-50"
         >
-          <FaArrowUp size={24} />
+          <FaArrowUp size={22} />
         </button>
       )}
 
-      {/* 🔴 Scroll to Bottom Button */}
+      {/* 🔽 Scroll to Bottom */}
       {showScrollBottom && (
         <button
-          className="fixed bottom-5 right-5 bg-gray-800 text-white p-3 rounded-full shadow-md hover:bg-gray-900 transition"
           onClick={scrollToBottom}
+          className="fixed bottom-5 right-4 md:right-6 bg-gray-800 text-white p-3 rounded-full shadow-lg hover:bg-gray-900 hover:scale-110 transition-transform duration-300 z-50"
         >
-          <FaArrowDown size={24} />
+          <FaArrowDown size={22} />
         </button>
       )}
     </>
