@@ -11,7 +11,7 @@ import WhyChoose from "./WhyChoose";
 const Home = () => {
   return (
     <div>
-    <PageTitle title="Curtains Furniture | Home"/>
+    <PageTitle title="Home | Curtains and Carpets Shop"/>
       <HeroSlider />
       <Products_Curtains />
       <Products_Blackout />

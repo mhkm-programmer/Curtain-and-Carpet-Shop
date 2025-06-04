@@ -1,12 +1,18 @@
 import { FaMapMarkerAlt, FaWhatsapp } from "react-icons/fa";
 import React, { useState } from "react";
-
 import Slider from "react-slick";
-import useThemeSwitcher from "../../../hooks/useThemeSwitcher";
 
 const HeroSlider = () => {
-  const [, setTheme] = useThemeSwitcher();
   const [showOptions, setShowOptions] = useState(false);
+
+  const colors = {
+    background: "#F9F5F1",
+    primaryText: "white",
+    accent: "#8C6239",
+    buttonBase: "#5A4438",
+    buttonHover: "#6B5847",
+    subtitle: "white",
+  };
 
   const handleShowOptions = () => setShowOptions(true);
 
@@ -17,12 +23,11 @@ const HeroSlider = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 6000,
     arrows: false,
     adaptiveHeight: true,
     pauseOnHover: false,
     pauseOnFocus: false,
-    pauseOnDotsHover: false,
   };
 
   const slides = [
@@ -51,41 +56,57 @@ const HeroSlider = () => {
     },
   ];
 
-  const colors = {
-    background: "#F2EDE6",
-    primaryText: "#2E2E2E",
-    accent: "#8C6239",
-    buttonBase: "#4A342E",
-    buttonHover: "#5A4035",
-    subtitle: "#6B6B6B",
-  };
-
   return (
-    <div
-      className="mx-auto overflow-hidden py-16 px-5 md:px-12 lg:flex items-center justify-between gap-12"
-      style={{
-        backgroundColor: colors.background,
-        color: colors.primaryText,
-        fontFamily: "'Inter', sans-serif",
-      }}
-    >
-      {/* Left Content */}
-      <div className="flex-1 max-w-xl space-y-6 text-center lg:text-left">
-        <h1 className="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight">
-          Elegant Curtains & Blinds for Every Space
+    <div className="relative w-full h-screen overflow-hidden">
+      {/* Slider Background */}
+      <Slider {...sliderSettings}>
+        {slides.map((slide, index) => (
+          <div key={index} className="w-full h-screen">
+            {slide.type === "image" && (
+              <img
+                src={slide.src}
+                alt={`Slide ${index + 1}`}
+                className="w-full h-screen object-cover"
+              />
+            )}
+            {slide.type === "video" && (
+              <iframe
+                src={`${slide.src}?autoplay=1&muted=1`}
+                allow="autoplay; fullscreen"
+                allowFullScreen
+                title={`Video ${index + 1}`}
+                className="w-full h-screen border-0"
+              />
+            )}
+          </div>
+        ))}
+      </Slider>
+
+      {/* Overlay Content */}
+      <div
+        className="absolute inset-0 flex flex-col items-center justify-center text-center px-6"
+        style={{
+          backgroundColor: "rgba(0, 0, 0, 0.4)",
+          color: colors.primaryText,
+        }}
+      >
+        <h1 className="text-3xl md:text-5xl font-extrabold leading-tight max-w-4xl">
+          Elegant Curtains & Capters for Home & Office
         </h1>
-        <p className="text-lg leading-relaxed" style={{ color: colors.subtitle }}>
-          <strong>AZLAAN CONTRACTING W.L.L</strong> offers premium <strong>curtains</strong> and
-          <strong> blinds</strong> that combine elegance and functionality. Whether for your
-          <strong> home</strong> or <strong>office</strong>, our customized solutions enhance every interior.
+        <p
+          className="mt-4 text-base md:text-lg max-w-2xl"
+          style={{ color: colors.subtitle }}
+        >
+          <strong>Curtains and Carpets Shop</strong> offers premium custom-made
+          <strong> curtains</strong> and <strong>capters</strong> that elevate your
+          interior style with function and class.
         </p>
 
-        {/* Action Buttons */}
         <div className="mt-6">
           {!showOptions ? (
             <button
               onClick={handleShowOptions}
-              className="bg-[#4A342E] hover:bg-[#5A4035] text-white font-semibold px-6 py-3 rounded-xl shadow-md transition-all duration-300"
+              className="bg-[#5A4438] hover:bg-[#6B5847] text-white font-semibold px-6 py-3 rounded-xl shadow-md transition-all duration-300"
             >
               Get a Free Measurement
             </button>
@@ -95,7 +116,7 @@ const HeroSlider = () => {
                 href="https://www.google.com/maps?q=Azlaan+Contracting+Qatar"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-[#4A342E] hover:bg-[#5A4035] text-white px-5 py-3 rounded-lg font-medium transition duration-300"
+                className="flex items-center gap-2 bg-[#5A4438] hover:bg-[#6B5847] text-white px-5 py-3 rounded-lg font-medium transition duration-300"
               >
                 <FaMapMarkerAlt /> Visit Our Showroom
               </a>
@@ -110,49 +131,6 @@ const HeroSlider = () => {
             </div>
           )}
         </div>
-      </div>
-
-      {/* Right Slider */}
-      <div className="flex-1 mt-12 lg:mt-0 max-w-xl w-full">
-        <Slider {...sliderSettings}>
-          {slides.map((slide, index) => (
-            <div key={index} className="flex justify-center items-center">
-              {slide.type === "image" && (
-                <img
-                  src={slide.src}
-                  alt={`Slide ${index + 1}`}
-                  className="rounded-2xl shadow-2xl w-full h-[400px] md:h-[500px] object-cover transition-transform duration-500 hover:scale-[1.01]"
-                />
-              )}
-
-              {slide.type === "video" && slide.videoType === "streamable" && (
-                <div className="w-full h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
-                  <iframe
-                    src={`${slide.src}?autoplay=1&muted=1`}
-                    allow="fullscreen; autoplay"
-                    allowFullScreen
-                    title={`Streamable Video ${index + 1}`}
-                    className="w-full h-full"
-                    style={{ border: "none" }}
-                  />
-                </div>
-              )}
-
-              {slide.type === "video" && slide.videoType === "youtube" && (
-                <div className="w-full h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
-                  <iframe
-                    src={slide.src}
-                    title={`YouTube Video ${index + 1}`}
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    className="w-full h-full"
-                  />
-                </div>
-              )}
-            </div>
-          ))}
-        </Slider>
       </div>
     </div>
   );
