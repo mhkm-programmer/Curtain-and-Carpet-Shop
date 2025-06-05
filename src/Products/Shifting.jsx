@@ -1,4 +1,4 @@
-import React from "react";
+
 import { FaTruck, FaClock, FaShieldAlt, FaUsers, FaHandshake } from "react-icons/fa";
 import PageTitle from "../pages/reusable/PageTitle";
 import ParallaxSection from "../pages/reusable/Parallax";

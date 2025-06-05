@@ -1,10 +1,10 @@
-import React from "react";
-import { FaRug, FaShippingFast, FaShieldAlt, FaThumbsUp } from "react-icons/fa";
+import { FaRulerCombined, FaCogs, FaTruckMoving, FaShieldAlt, FaTools } from "react-icons/fa";
 import PageTitle from "../pages/reusable/PageTitle";
 import ParallaxSection from "../pages/reusable/Parallax";
+import React from "react";
 
 const Carpets = () => {
- const mediaGallery = [
+  const mediaGallery = [
       { type: "image", src: "https://8upload.com/image/68337d45aa60e/IMG-20250518-WA0039.jpg" },
   { type: "video", src: "https://streamable.com/e/md5pe4" },
   { type: "image", src: "https://8upload.com/image/68337cbb8461d/IMG-20250518-WA0006.jpg" },
@@ -14,23 +14,22 @@ const Carpets = () => {
   { type: "image", src: "https://8upload.com/image/67ab0bdb0ea7e/office4.jpg" },
   { type: "image", src: "https://8upload.com/image/67ab0be4cf914/office6.jpg" },
   ];
-  return (
-    <div className="font-sans text-gray-900">
-      <PageTitle title="Carpets Service in Qatar | AZLAAN CONTRACTING W.L.L" />
 
+  return (
+    <div className="font-sans text-gray-800">
+      <PageTitle title="Carpet Supply & Installation | AZLAAN CONTRACTING W.L.L" />
       <ParallaxSection
-        imagePath="https://8upload.com/image/carpets-parallax.jpg"
-        title="Premium Carpets Services"
-        subTitle="Comfort • Style • Quality"
+        imagePath="https://8upload.com/image/67a7f51fa667f/Flooring-min.jpg"
+        title="Luxury Carpet Solutions"
+        subTitle="Elegant • Custom-fit • Commercial & Residential"
       />
 
-      {/* Intro Section */}
       <section className="max-w-7xl mx-auto px-6 py-16 text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#4A342E]">
-          Quality Carpets Installation & Sales in Qatar
+          High-Quality Carpets for Offices, Homes & Hotels
         </h2>
-        <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-          AZLAAN CONTRACTING W.L.L offers premium carpets tailored to enhance your home or office with durable, stylish, and comfortable flooring solutions.
+        <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          AZLAAN CONTRACTING W.L.L provides professional carpet supply and installation services for villas, hotels, offices, majlis, and commercial interiors across Qatar. Choose from a wide range of textures, patterns, and colors.
         </p>
       </section>
 
@@ -66,75 +65,74 @@ const Carpets = () => {
         </div>
       </section>
 
-      {/* Service Highlights */}
-      <section className="bg-[#f9f7f4] py-20 px-6">
+
+      {/* Service Features */}
+      <section className="bg-[#f9f7f4] py-16 px-6">
         <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 text-center">
           <div className="bg-white p-8 shadow-lg rounded-xl hover:shadow-xl transition">
-            <FaRug size={40} className="text-[#4A342E] mx-auto mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Wide Range of Carpets</h3>
-            <p className="text-gray-700">Various styles and materials to suit any interior design and preference.</p>
+            <FaRulerCombined size={40} className="text-[#4A342E] mx-auto mb-4" />
+            <h3 className="text-xl font-semibold mb-2">Custom Measurements</h3>
+            <p className="text-gray-600">We take exact measurements to ensure perfect fit for rooms, halls, staircases, and majlis spaces.</p>
           </div>
           <div className="bg-white p-8 shadow-lg rounded-xl hover:shadow-xl transition">
-            <FaShippingFast size={40} className="text-[#4A342E] mx-auto mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Fast Delivery & Installation</h3>
-            <p className="text-gray-700">Efficient services ensuring quick setup without compromising quality.</p>
+            <FaCogs size={40} className="text-[#4A342E] mx-auto mb-4" />
+            <h3 className="text-xl font-semibold mb-2">Durable & Elegant</h3>
+            <p className="text-gray-600">We use high-quality, low-maintenance carpet materials that add comfort and class to every setting.</p>
           </div>
           <div className="bg-white p-8 shadow-lg rounded-xl hover:shadow-xl transition">
-            <FaShieldAlt size={40} className="text-[#4A342E] mx-auto mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Durability Guaranteed</h3>
-            <p className="text-gray-700">High-quality carpets that withstand wear & tear while retaining beauty.</p>
+            <FaTruckMoving size={40} className="text-[#4A342E] mx-auto mb-4" />
+            <h3 className="text-xl font-semibold mb-2">Nationwide Service</h3>
+            <p className="text-gray-600">We deliver and install carpets all over Qatar — residential, commercial, and industrial projects.</p>
           </div>
         </div>
       </section>
 
       {/* Testimonials */}
-      <section className="py-20 px-6 bg-white text-center">
-        <h3 className="text-3xl font-bold text-[#4A342E] mb-10">What Our Clients Say</h3>
+      <section className="py-20 px-6 text-center bg-white">
+        <h2 className="text-3xl font-bold text-[#4A342E] mb-10">Client Testimonials</h2>
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-          <div className="bg-gray-100 p-8 rounded-xl shadow-md italic text-gray-700">
-            “The carpets we purchased from AZLAAN are stunning and really elevated our office ambiance. Highly recommended!”
-            <br />
-            <span className="block mt-4 font-semibold text-[#4A342E]">— Aisha M., Doha</span>
+          <div className="bg-gray-100 p-6 rounded-xl shadow-md">
+            <p className="text-gray-700 italic">“We got beautiful carpets installed in our majlis area — very clean work and fast service!”</p>
+            <span className="block mt-4 font-semibold text-[#4A342E]">— Faisal A., Al Wakra</span>
           </div>
-          <div className="bg-gray-100 p-8 rounded-xl shadow-md italic text-gray-700">
-            “Professional service and quick installation. Our living room carpet is both beautiful and comfortable.”
-            <br />
-            <span className="block mt-4 font-semibold text-[#4A342E]">— Youssef K., Al Rayyan</span>
+          <div className="bg-gray-100 p-6 rounded-xl shadow-md">
+            <p className="text-gray-700 italic">“AZLAAN team helped us choose the best design for our hotel lobby. Smooth installation and excellent quality.”</p>
+            <span className="block mt-4 font-semibold text-[#4A342E]">— Sara M., Doha</span>
           </div>
         </div>
       </section>
 
       {/* Why Choose Us */}
       <section className="bg-[#f9f7f4] py-20 px-6 text-center">
-        <h3 className="text-3xl font-bold text-[#4A342E] mb-10">Why Choose AZLAAN?</h3>
+        <h2 className="text-3xl font-bold text-[#4A342E] mb-10">Why AZLAAN for Carpets?</h2>
         <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
           <div className="bg-white p-6 rounded-xl shadow-md">
-            <FaRug size={36} className="text-[#4A342E] mx-auto mb-4" />
-            <h4 className="text-lg font-semibold mb-2">Expert Carpet Selection</h4>
-            <p className="text-gray-700">Guidance on choosing carpets that fit your needs and style perfectly.</p>
-          </div>
-          <div className="bg-white p-6 rounded-xl shadow-md">
-            <FaThumbsUp size={36} className="text-[#4A342E] mx-auto mb-4" />
-            <h4 className="text-lg font-semibold mb-2">Customer Satisfaction</h4>
-            <p className="text-gray-700">We ensure your full satisfaction with quality products and service.</p>
-          </div>
-          <div className="bg-white p-6 rounded-xl shadow-md">
             <FaShieldAlt size={36} className="text-[#4A342E] mx-auto mb-4" />
-            <h4 className="text-lg font-semibold mb-2">Reliable Aftercare</h4>
-            <p className="text-gray-700">Support and maintenance advice to keep your carpets looking new.</p>
+            <h3 className="text-lg font-semibold mb-2">Premium Quality</h3>
+            <p className="text-gray-600">We use only trusted carpet brands and materials that stand the test of time and usage.</p>
+          </div>
+          <div className="bg-white p-6 rounded-xl shadow-md">
+            <FaTools size={36} className="text-[#4A342E] mx-auto mb-4" />
+            <h3 className="text-lg font-semibold mb-2">Professional Team</h3>
+            <p className="text-gray-600">Our experienced team ensures clean, wrinkle-free installation with smooth edges and perfect finishing.</p>
+          </div>
+          <div className="bg-white p-6 rounded-xl shadow-md">
+            <FaTruckMoving size={36} className="text-[#4A342E] mx-auto mb-4" />
+            <h3 className="text-lg font-semibold mb-2">Fast Delivery</h3>
+            <p className="text-gray-600">Quick response, fast site visits, and same-week installation for most projects.</p>
           </div>
         </div>
       </section>
 
-      {/* Call To Action */}
+      {/* CTA Section */}
       <section className="bg-[#B8860B] py-20 text-white text-center px-4 sm:px-6 lg:px-8">
-        <h3 className="text-3xl md:text-4xl font-bold mb-4">Enhance Your Space with Beautiful Carpets!</h3>
-        <p className="text-lg mb-6">Contact AZLAAN CONTRACTING W.L.L for premium carpet solutions tailored to you.</p>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">Upgrade Your Space with Premium Carpets</h2>
+        <p className="text-lg mb-6">Reach out for consultation, samples, and tailored carpet solutions that suit your needs.</p>
         <a
           href="https://wa.me/97470373588"
           className="inline-block bg-white text-[#4A342E] font-semibold px-6 py-3 rounded-xl shadow-md hover:bg-gray-100 transition-all duration-300"
         >
-          WhatsApp Us
+          Contact via WhatsApp
         </a>
       </section>
     </div>
