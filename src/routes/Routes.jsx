@@ -25,10 +25,11 @@ import BedRoomCabinet from "../Products/BedRoomCabinet";
 
 import Carpets from "../Products/Carpets";
 import Sofa from "../Products/Sofa";
-import Barkia from "../Products/Barkia";
+
 import Shifting from "../Products/Shifting";
 import Wallpapers from "../Products/Wallpapers";
-import Furniture from "../Products/Furniture";
+
+import Barkia from "../Products/Barkia";
 
 const router = createBrowserRouter([
   {
