@@ -48,14 +48,7 @@ const router = createBrowserRouter([
       { path: "/faq", element: <FaqPage /> },
       { path: "/terms", element: <Terms /> },
 
-      // Services & Subroutes
-      {
-        path: "/service",
-        element: <ServicePage />,
-        children: [
-          { path: "furniture", element: <Furniture /> },
-        ],
-      },
+     
 
       // Curtain Products
       { path: "/curtains", element: <Curtains /> },
