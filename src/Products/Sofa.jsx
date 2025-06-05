@@ -1,76 +1,146 @@
+import React from "react";
+import { FaCouch, FaPalette, FaStar, FaUsers, FaHandshake } from "react-icons/fa";
 import PageTitle from "../pages/reusable/PageTitle";
 import ParallaxSection from "../pages/reusable/Parallax";
 
-const officeGallery = [
-  "https://8upload.com/image/67ab0bce5e3e5/office1.jpg",
-  "https://8upload.com/image/67ab0bd2011aa/office2.jpg",
-  "https://8upload.com/image/67ab0bd57aaae/office3.jpg",
-  "https://8upload.com/image/67ab0bdb0ea7e/office4.jpg",
-  "https://8upload.com/image/67ab0be06d35b/office5.jpg",
-  "https://8upload.com/image/67ab0be4cf914/office6.jpg",
-];
+const SofaMojlishService = () => {
+ const mediaGallery = [
+      { type: "image", src: "https://8upload.com/image/68337d45aa60e/IMG-20250518-WA0039.jpg" },
+  { type: "video", src: "https://streamable.com/e/md5pe4" },
+  { type: "image", src: "https://8upload.com/image/68337cbb8461d/IMG-20250518-WA0006.jpg" },
+  { type: "video", src: "https://streamable.com/e/a82dgf" },
+  { type: "image", src: "https://8upload.com/image/67ab0bd2011aa/office2.jpg" },
+  { type: "video", src: "https://streamable.com/e/cxrr13" },
+  { type: "image", src: "https://8upload.com/image/67ab0bdb0ea7e/office4.jpg" },
+  { type: "image", src: "https://8upload.com/image/67ab0be4cf914/office6.jpg" },
+  ];
 
-const Sofa = () => {
   return (
-    <div className="font-sans text-gray-800">
-      {/* SEO Title */}
-      <PageTitle title="Office Blinds | AZLAAN CONTRACTING W.L.L" />
+    <div className="font-sans text-gray-900">
+      <PageTitle title="Sofa & Mojlish Service in Qatar | AZLAAN CONTRACTING W.L.L" />
 
-      {/* Hero Parallax Banner */}
       <ParallaxSection
-        imagePath="https://8upload.com/image/67ab0ba8e2452/office-banner.jpg"
-        title="Office Blinds Solutions"
-        subTitle="Professional. Minimal. Productive."
+        imagePath="https://8upload.com/image/684a1d4a99e57/sofa-parallax.jpg"
+        title="Elegant Sofa & Mojlish Solutions"
+        subTitle="Comfort • Style • Craftsmanship"
       />
 
-      {/* Introduction Section */}
-      <section className="max-w-6xl mx-auto px-6 py-16 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-[#4A342E] mb-6">
-          Smart Blinds for Smarter Workspaces
+      {/* Intro Section */}
+      <section className="max-w-7xl mx-auto px-6 py-16 text-center">
+        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#4A342E]">
+          Premium Sofa & Mojlish Services Across Qatar
         </h2>
-        <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-          Enhance your office aesthetics and improve functionality with our range of commercial blinds. From blackout roller blinds to sleek verticals, AZLAAN CONTRACTING W.L.L brings premium window solutions for boardrooms, cubicles, and corporate spaces across Qatar.
+        <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+          AZLAAN CONTRACTING W.L.L specializes in exquisite sofa and mojlish design, repair, and installation, combining traditional craftsmanship with modern comfort to transform your living spaces.
         </p>
       </section>
 
-      {/* Office Blinds Gallery */}
-      <section className="max-w-7xl mx-auto px-6 pb-20">
-        <h3 className="text-2xl font-semibold text-center text-[#4A342E] mb-10">
-          Office Blinds Gallery
-        </h3>
+      
+      {/* Gallery */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <h2 className="text-3xl font-semibold text-center mb-10">Gallery: Our Work in Action</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {officeGallery.map((src, index) => (
+          {mediaGallery.map((media, index) => (
             <div
               key={index}
-              className="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300"
+              className="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
             >
-              <img
-                src={src}
-                alt={`Office blind ${index + 1}`}
-                className="w-full h-64 object-cover transform hover:scale-105 transition-all duration-500"
-              />
+              {media.type === "image" ? (
+                <img
+                  src={media.src}
+                  alt={`Media ${index + 1}`}
+                  className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
+                />
+              ) : (
+                <div className="w-full h-64 overflow-hidden">
+                  <iframe
+                    src={media.src}
+                    title={`Video ${index + 1}`}
+                    className="w-full h-full"
+                    frameBorder="0"
+                    allow="autoplay; fullscreen"
+                    allowFullScreen
+                  />
+                </div>
+              )}
             </div>
           ))}
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-[#4A342E] text-white text-center px-6">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          Ready to Upgrade Your Workspace?
-        </h2>
-        <p className="text-lg mb-6">
-          Connect with us for custom design, product demo, and corporate pricing.
-        </p>
+      {/* Service Highlights */}
+      <section className="bg-[#f9f7f4] py-20 px-6">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 text-center">
+          <div className="bg-white p-8 shadow-lg rounded-xl hover:shadow-xl transition">
+            <FaCouch size={40} className="text-[#4A342E] mx-auto mb-4" />
+            <h3 className="text-xl font-semibold mb-2">Custom Sofa Designs</h3>
+            <p className="text-gray-700">Tailored to your style and comfort preferences using premium materials.</p>
+          </div>
+          <div className="bg-white p-8 shadow-lg rounded-xl hover:shadow-xl transition">
+            <FaPalette size={40} className="text-[#4A342E] mx-auto mb-4" />
+            <h3 className="text-xl font-semibold mb-2">Traditional Mojlish Craftsmanship</h3>
+            <p className="text-gray-700">Handcrafted mojlish fittings that add cultural elegance to your spaces.</p>
+          </div>
+          <div className="bg-white p-8 shadow-lg rounded-xl hover:shadow-xl transition">
+            <FaStar size={40} className="text-[#4A342E] mx-auto mb-4" />
+            <h3 className="text-xl font-semibold mb-2">Durability & Comfort</h3>
+            <p className="text-gray-700">Quality craftsmanship ensuring long-lasting furniture with superior comfort.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-20 px-6 bg-white text-center">
+        <h3 className="text-3xl font-bold text-[#4A342E] mb-10">What Our Clients Say</h3>
+        <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+          <div className="bg-gray-100 p-8 rounded-xl shadow-md italic text-gray-700">
+            “AZLAAN transformed our living room with elegant sofas and mojlish — outstanding quality and craftsmanship!”
+            <br />
+            <span className="block mt-4 font-semibold text-[#4A342E]">— Fatima H., Doha</span>
+          </div>
+          <div className="bg-gray-100 p-8 rounded-xl shadow-md italic text-gray-700">
+            “Excellent service and attention to detail. Our mojlish looks beautiful and fits perfectly.”
+            <br />
+            <span className="block mt-4 font-semibold text-[#4A342E]">— Khalid S., Al Wakrah</span>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="bg-[#f9f7f4] py-20 px-6 text-center">
+        <h3 className="text-3xl font-bold text-[#4A342E] mb-10">Why Choose AZLAAN?</h3>
+        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+          <div className="bg-white p-6 rounded-xl shadow-md">
+            <FaUsers size={36} className="text-[#4A342E] mx-auto mb-4" />
+            <h4 className="text-lg font-semibold mb-2">Skilled Artisans</h4>
+            <p className="text-gray-700">Experienced craftsmen passionate about preserving traditional techniques with modern comfort.</p>
+          </div>
+          <div className="bg-white p-6 rounded-xl shadow-md">
+            <FaHandshake size={36} className="text-[#4A342E] mx-auto mb-4" />
+            <h4 className="text-lg font-semibold mb-2">Customer Satisfaction</h4>
+            <p className="text-gray-700">Committed to delivering excellence with transparent communication and aftercare support.</p>
+          </div>
+          <div className="bg-white p-6 rounded-xl shadow-md">
+            <FaStar size={36} className="text-[#4A342E] mx-auto mb-4" />
+            <h4 className="text-lg font-semibold mb-2">Premium Materials</h4>
+            <p className="text-gray-700">Only the best fabrics, wood, and finishes to ensure durability and aesthetic appeal.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Call To Action */}
+      <section className="bg-[#B8860B] py-20 text-white text-center px-4 sm:px-6 lg:px-8">
+        <h3 className="text-3xl md:text-4xl font-bold mb-4">Ready to Beautify Your Space? Contact Us Now!</h3>
+        <p className="text-lg mb-6">Get expert consultation and custom sofa & mojlish solutions tailored for you.</p>
         <a
           href="https://wa.me/97470373588"
           className="inline-block bg-white text-[#4A342E] font-semibold px-6 py-3 rounded-xl shadow-md hover:bg-gray-100 transition-all duration-300"
         >
-          Contact via WhatsApp
+          WhatsApp Us
         </a>
       </section>
     </div>
   );
 };
 
-export default Sofa;
+export default SofaMojlishService;
