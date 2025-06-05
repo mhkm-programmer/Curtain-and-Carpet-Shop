@@ -1,32 +1,34 @@
-import AboutMePage from "../pages/about/AboutMePage";
-import Blinds from "../Products/Blinds";
-import BlindsBlackout from "../Products/BlindsBlackout";
-import BlindsOffice from "../Products/BlindsOffice";
-import BlindsRoller from "../Products/BlindsRoller";
-import BlindsVenetian from "../Products/BlindsVenetian";
-import BlindsVertical from "../Products/BlindsVertical";
-import BlindsWindow from "../Products/BlindsWindow";
-import BlogPage from "../pages/blogs/BlogPage";
-import ContactPage from "../pages/contact/ContactPage";
-import Curtains from "../Products/Curtains";
-import CurtainsBedroom from "../Products/CurtainsBedroom";
-import CurtainsBlackout from "../Products/CurtainsBlackout";
-import CurtainsHotel from "../Products/CurtainsHotel";
-import CurtainsLivingroom from "../Products/CurtainsLivingroom";
-import CurtainsOffice from "../Products/CurtainsOffice";
-import CurtainsRoller from "../Products/CurtainsRoller";
-import CurtainsWave from "../Products/CurtainsWave";
-import CurtainsWindows from "../Products/CurtainsWindows";
-import ErrorPage from "../pages/errorPage/ErrorPage";
-import FaqPage from "../pages/FAQ/FaqPage";
-import Furniture from "../Products/Furniture";
-import Gallery from "../pages/Gallery";
-import Home from "../pages/Home/Home";
+import { createBrowserRouter } from "react-router-dom";
+
+// Layout
 import Main from "../layouts/Main";
-import PortfolioPage from "../pages/portfolio/PortfolioPage";
+
+// Pages
+import Home from "../pages/Home/Home";
+import AboutMePage from "../pages/about/AboutMePage";
+import ContactPage from "../pages/contact/ContactPage";
+import FaqPage from "../pages/FAQ/FaqPage";
 import ServicePage from "../pages/service/ServicePage";
 import Terms from "../pages/terms/Terms";
-import { createBrowserRouter } from "react-router-dom";
+import ErrorPage from "../pages/errorPage/ErrorPage";
+
+// Products
+import Curtains from "../Products/Curtains";
+import OfficeCurtain from "../Products/OfficeCurtain";
+import OfficeBlind from "../Products/OfficeBlind";
+import RollerCurtain from "../Products/RollerCurtain";
+
+import Cabinet from "../Products/Cabinet";
+import TvCabinet from "../Products/TvCabinets";
+import KitchenCabinet from "../Products/KitchenCabinet";
+import BedRoomCabinet from "../Products/BedRoomCabinet";
+
+import Carpets from "../Products/Carpets";
+import Sofa from "../Products/Sofa";
+import Barkia from "../Products/Barkia";
+import Shifting from "../Products/Shifting";
+import Wallpapers from "../Products/Wallpapers";
+import Furniture from "../Products/Furniture";
 
 const router = createBrowserRouter([
   {
@@ -36,121 +38,49 @@ const router = createBrowserRouter([
         <Main />
       </div>
     ),
-    errorElement: <ErrorPage></ErrorPage>,
+    errorElement: <ErrorPage />,
     children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
+      // Static Pages
+      { path: "/", element: <Home /> },
+      { path: "/about", element: <AboutMePage /> },
+      { path: "/contact", element: <ContactPage /> },
+      { path: "/faq", element: <FaqPage /> },
+      { path: "/terms", element: <Terms /> },
+
+      // Services & Subroutes
       {
         path: "/service",
         element: <ServicePage />,
-        children:[
-          {
-          path:"/service/furniture",
-          element:<Furniture/>,
-        },
-        ]
+        children: [
+          { path: "furniture", element: <Furniture /> },
+        ],
       },
-      {
-        path: "/curtains",
-        element: <Curtains />,
-      },
-      {
-        path: "/curtains/blackout",
-        element: <CurtainsBlackout />,
-      },
-      {
-        path: "/curtains/bedroom",
-        element: <CurtainsBedroom />,
-      },
-      {
-        path: "/curtains/windows",
-        element: <CurtainsWindows />,
-      },
-      {
-        path: "/curtains/hotel",
-        element: <CurtainsHotel />,
-      },
-      {
-        path: "/curtains/wave",
-        element: <CurtainsWave />,
-      },
-      {
-        path: "/curtains/livingroom",
-        element: <CurtainsLivingroom />,
-      },
-      {
-        path: "/curtains/roller",
-        element: <CurtainsRoller />,
-      },
-      {
-        path: "/curtains/office",
-        element: <CurtainsOffice />,
-      },
-      {
-        path: "/blinds",
-        element: <Blinds />,
-      },
-     
-      {
-        path: "/blinds/blackout",
-        element: <BlindsBlackout />,
-      },
-      {
-        path: "/blinds/venetian",
-        element: <BlindsVenetian />,
-      },
-      {
-        path: "/blinds/roller",
-        element: <BlindsRoller />,
-      },
-      {
-        path: "/blinds/office",
-        element: <BlindsOffice />,
-      },
-      {
-        path: "/blinds/vertical",
-        element: <BlindsVertical />,
-      },
-      {
-        path: "/blinds/window",
-        element: <BlindsWindow />,
-      },
-      {
-        path: "/portfolio",
-        element: <PortfolioPage />,
-      },
-      {
-        path: "/gallery",
-        element: <Gallery />,
-      },
-      {
-        path: "/blog",
-        element: <BlogPage />,
-      },
-      {
-        path: "/about",
-        element: <AboutMePage />,
-      },
-      {
-        path: "/contact",
-        element: <ContactPage />,
-      },
-      {
-        path: "/faq",
-        element: <FaqPage />,
-      },
-      {
-        path: "/terms",
-        element: <Terms></Terms>,
-      },
+
+      // Curtain Products
+      { path: "/curtains", element: <Curtains /> },
+      { path: "/curtains/officeCurtain", element: <OfficeCurtain /> },
+      { path: "/curtains/blinds", element: <OfficeBlind /> },
+      { path: "/curtains/roller", element: <RollerCurtain /> },
+
+      // Cabinet Products
+      { path: "/cabinets", element: <Cabinet /> },
+      { path: "/cabinets/tv", element: <TvCabinet /> },
+      { path: "/cabinets/kitchen", element: <KitchenCabinet /> },
+      { path: "/cabinets/bedroom", element: <BedRoomCabinet /> },
+
+      // Other Products
+      { path: "/carpet", element: <Carpets /> },
+      { path: "/sofa", element: <Sofa /> },
+      { path: "/barkia", element: <Barkia /> },
+      { path: "/moving", element: <Shifting /> },
+      { path: "/wallpaper", element: <Wallpapers /> },
     ],
   },
 
+  // Catch-all route
   {
     path: "*",
-    element: <ErrorPage></ErrorPage>,
+    element: <ErrorPage />,
   },
 ]);
 

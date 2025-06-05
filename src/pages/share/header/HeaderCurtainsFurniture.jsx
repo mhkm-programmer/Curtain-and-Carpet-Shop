@@ -14,7 +14,7 @@ const HeaderCurtainsFurniture = () => {
       label: "CURTAINS ▼",
       to: "/curtains",
       submenu: [
-        { label: "HOME & OFFICE CURTAINS", to: "/curtains/curtain" },
+        { label: "HOME & OFFICE CURTAINS", to: "/curtains/officeCurtain" },
         { label: "HOME & OFFICE BLINDS", to: "/curtains/blinds" },
         { label: "ROLLER CURTAINS", to: "/curtains/roller" },
       ],
