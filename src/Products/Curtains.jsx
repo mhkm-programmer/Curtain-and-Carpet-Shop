@@ -1,80 +1,126 @@
-import { FaCouch, FaRulerCombined, FaWarehouse } from "react-icons/fa";
-
 import PageTitle from "../pages/reusable/PageTitle";
 import ParallaxSection from "../pages/reusable/Parallax";
-import Products_Curtains from "../pages/Home/Products_Curtains";
-import React from "react";
 
-const Curtains = () => {
+const mediaGallery = [
+  { type: "image", src: "https://8upload.com/image/curtain1.jpg" },
+  { type: "image", src: "https://8upload.com/image/curtain2.jpg" },
+  { type: "video", src: "https://streamable.com/e/curtainVid1" },
+  { type: "image", src: "https://8upload.com/image/curtain3.jpg" },
+  { type: "image", src: "https://8upload.com/image/curtain4.jpg" },
+];
+
+const Curtain = () => {
   return (
-    <div className="font-sans text-gray-800">
-      {/* SEO Meta Title */}
-      <PageTitle title="Curtains | Curtains Furniture | AZLAAN CONTRACTING W.L.L" />
+    <div className="font-sans text-[#1F1F1F] bg-white">
+      <PageTitle title="Curtains – Elegance & Comfort for Every Room" />
 
-      {/* Hero Parallax */}
       <ParallaxSection
-        imagePath="https://8upload.com/image/67a7f51fa667f/About_Us-min.jpg"
-        title="Curtains & Blinds Solutions"
-        subTitle="Elegance. Privacy. Functionality."
+        imagePath="https://8upload.com/image/curtains-banner.jpg"
+        title="Curtains That Transform Your Space"
+        subTitle="Style, Privacy & Light Control"
       />
 
-      {/* Intro Section */}
-      <section className="max-w-7xl mx-auto px-6 py-16 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#4A342E]">
-          Discover Custom Curtains That Reflect Your Style
-        </h2>
+      {/* Introduction */}
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
+        <h1 className="text-4xl font-bold mb-4">High-Quality Curtains for Home and Office</h1>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-          Whether it’s blackout curtains for your bedroom, sheer curtains for your living room, or premium drapes for your hotel — AZLAAN CONTRACTING W.L.L delivers tailored curtain and blinds solutions across Qatar.
+          Our wide selection of curtains offers perfect solutions for privacy, light filtering, and aesthetic appeal.
+          Crafted from premium fabrics with a variety of styles and colors to match your decor.
         </p>
       </section>
 
-      {/* Services Highlights */}
-      <section className="bg-[#f9f7f4] py-16 px-6">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 text-center">
-          <div className="bg-white p-8 shadow-lg rounded-xl hover:shadow-xl transition">
-            <FaRulerCombined size={40} className="text-[#4A342E] mx-auto mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Custom Designs</h3>
-            <p className="text-gray-600">
-              Tailor-made curtain styles to match your décor and preferences.
-            </p>
-          </div>
-          <div className="bg-white p-8 shadow-lg rounded-xl hover:shadow-xl transition">
-            <FaCouch size={40} className="text-[#4A342E] mx-auto mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Premium Materials</h3>
-            <p className="text-gray-600">
-              A wide range of luxurious and durable curtain fabrics including velvet, linen, and blackout.
-            </p>
-          </div>
-          <div className="bg-white p-8 shadow-lg rounded-xl hover:shadow-xl transition">
-            <FaWarehouse size={40} className="text-[#4A342E] mx-auto mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Nationwide Installation</h3>
-            <p className="text-gray-600">
-              Expert fitting and installation for homes, offices, and hotels across Qatar.
-            </p>
+      {/* Features */}
+      <section className="bg-[#F9F9F9] py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-semibold mb-10">Why Choose Our Curtains?</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+            {[
+              { title: "Durable & Stylish Fabrics", icon: "🧵" },
+              { title: "Custom Fit & Design", icon: "📐" },
+              { title: "Professional Installation", icon: "🛠️" },
+            ].map((item, idx) => (
+              <div key={idx} className="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+                <div className="text-4xl mb-4">{item.icon}</div>
+                <h3 className="text-xl font-semibold">{item.title}</h3>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Product Slider Section */}
-      <Products_Curtains />
+      {/* Gallery */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <h2 className="text-3xl font-semibold text-center mb-10">Gallery: Curtain Collection</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {mediaGallery.map((media, index) => (
+            <div
+              key={index}
+              className="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
+            >
+              {media.type === "image" ? (
+                <img
+                  src={media.src}
+                  alt={`Media ${index + 1}`}
+                  className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
+                />
+              ) : (
+                <div className="w-full h-64 overflow-hidden">
+                  <iframe
+                    src={media.src}
+                    title={`Video ${index + 1}`}
+                    className="w-full h-full"
+                    frameBorder="0"
+                    allow="autoplay; fullscreen"
+                    allowFullScreen
+                  />
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-[#4A342E] text-white text-center px-6">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          Ready to Transform Your Interiors?
-        </h2>
-        <p className="text-lg mb-6">
-          Get in touch for custom curtain ideas, free consultations, and installation bookings.
+      {/* Testimonials */}
+      <section className="bg-white py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-3xl font-semibold mb-10">Customer Reviews</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              {
+                name: "Linda K.",
+                comment: "Beautiful curtains with excellent fabric quality and fit. Very pleased!",
+              },
+              {
+                name: "Ahmed S.",
+                comment: "Fast and professional installation, really transformed my office space.",
+              },
+            ].map((testi, idx) => (
+              <div key={idx} className="p-6 border rounded-xl shadow-sm bg-[#F9F9F9]">
+                <p className="italic mb-4">“{testi.comment}”</p>
+                <p className="font-semibold text-[#B8860B]">– {testi.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="bg-[#B8860B] py-20 text-white text-center px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl font-bold mb-4">Enhance Your Space with Our Curtains</h2>
+        <p className="text-lg mb-6 max-w-3xl mx-auto">
+          Contact us now for a free consultation and discover the perfect curtains tailored to your needs.
         </p>
         <a
           href="https://wa.me/97470373588"
-          className="inline-block bg-white text-[#4A342E] font-semibold px-6 py-3 rounded-xl shadow-md hover:bg-gray-100 transition-all duration-300"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-white text-[#1F1F1F] font-semibold px-6 py-3 rounded-xl shadow hover:bg-gray-200 transition"
         >
-          Contact via WhatsApp
+          Message Us on WhatsApp
         </a>
       </section>
     </div>
   );
 };
 
-export default Curtains;
+export default Curtain;

@@ -91,19 +91,23 @@ const HeaderCurtainsFurniture = () => {
   return (
     <div className="sticky top-0 z-50 bg-[#1a1a1a] shadow-lg">
       {/* Header Typing Banner */}
-      <div className="bg-[#333333] py-2 text-center text-[#ffcc00] text-sm md:text-base font-medium">
-        <Typed
-          strings={[
-            "Welcome to Curtains and Carpets Shop in Qatar",
-            "Your One-Stop Shop for Quality Curtains & Carpets",
-            "Curtains, Carpets & Custom Interiors Across Qatar",
-            "Free Delivery for Bulk Orders – Contact Us Now!",
-          ]}
-          typeSpeed={50}
-          backSpeed={30}
-          loop
-        />
-      </div>
+      <div className="bg-[#2b2b2b] py-3 px-4 text-center text-[#ffcc00] text-base md:text-lg font-semibold tracking-wide shadow-sm">
+  <p className="inline-block">
+    <Typed
+      strings={[
+        "Welcome to Qatar's Premier Curtains & Carpets Store",
+        "Quality Curtains & Carpets Tailored to Your Space",
+        "Serving Homes & Offices Across Qatar with Style",
+        "Free Delivery for Bulk Orders – Contact Us Today!",
+      ]}
+      typeSpeed={45}
+      backSpeed={25}
+      backDelay={2500}
+      loop
+    />
+  </p>
+</div>
+
 
       {/* Search Bar */}
       <div className="bg-[#1a1a1a] px-4 py-2 flex justify-center">
@@ -139,12 +143,12 @@ const HeaderCurtainsFurniture = () => {
 
       {/* Navigation Menu */}
       <div className="bg-[#1a1a1a] text-white">
-        <div className="flex items-center justify-between px-4 py-2">
+        <div className="flex items-center justify-between  px-4 py-2">
           <NavLink to="/">
             <img
-              src="https://8upload.com/image/67979661192f3/AL-FWZ_Tradign_Contracting_Logo.png"
+              src="https://8upload.com/image/6841a8b59659f/Curtain___Carpet_logo__1_.png"
               alt="Logo"
-              className="h-10"
+              className="h-12 bg-white rounded-4 p-1"
             />
           </NavLink>
 
