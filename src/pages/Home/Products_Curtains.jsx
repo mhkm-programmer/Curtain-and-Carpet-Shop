@@ -29,6 +29,27 @@ const MostPopularProducts = () => {
       image: "https://8upload.com/image/68454116b9f13/IMG-20250531-WA0002.jpg",
       link: "/curtains/roller",
     },
+    {
+      id: 4,
+      name: "TV Cabinets",
+      subtitle: "Perfect for light control and privacy",
+      image: "https://8upload.com/image/6841ab2659f11/1080_1.jpg",
+      link: "/cabinets/tv",
+    },
+    {
+      id: 5,
+      name: "Bedroom Cabinets",
+      subtitle: "Space-saving and stylish solutions",
+      image: "https://8upload.com/image/6841ab2679df6/1080_2.jpg",
+      link: "/cabinets/bedroom",
+    },
+    {
+      id: 6,
+      name: "Kitchen Cabinets",
+      subtitle: "Custom cabinets for Kitchens",
+      image: "https://8upload.com/image/68454759d9150/WhatsApp-Image-2024-04-22-at-1.50.19-PM-1024x768.jpeg",
+      link: "/cabinets/kitchen",
+    },
   ];
 
   const NextArrow = ({ onClick }) => (
