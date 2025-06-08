@@ -91,10 +91,10 @@ const HeroSlider = () => {
           ) : (
             <div className="flex flex-col sm:flex-row items-center gap-4">
               <a
-                href="https://www.google.com/maps?q=Azlaan+Contracting+Qatar"
+                href="https://g.co/kgs/TvC8hir"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-[#5A4438] hover:bg-[#6B5847] text-white px-5 py-3 rounded-lg font-medium transition duration-300"
+                className="flex items-center gap-2 bg-[#B8860B] hover:bg-[#a97a0a] text-white px-5 py-3 rounded-lg font-medium transition duration-300"
               >
                 <FaMapMarkerAlt /> Visit Our Showroom
               </a>
