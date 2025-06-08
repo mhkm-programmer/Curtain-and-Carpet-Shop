@@ -1,5 +1,4 @@
 import "react-alice-carousel/lib/alice-carousel.css";
-
 import AliceCarousel from "react-alice-carousel";
 import React from "react";
 
@@ -23,32 +22,37 @@ const OurClient = () => {
   ];
 
   const items = logos.map((logo, index) => (
-    <div key={index} className="flex justify-center items-center p-2">
+    <div
+      key={index}
+      className="flex justify-center items-center p-4"
+    >
       <img
         src={logo.src}
         alt={logo.alt}
-        className="w-40 h-20 object-contain rounded-md shadow-md hover:scale-105 transition-transform duration-300"
+        className="w-36 h-20 object-contain rounded-lg shadow-md border border-gray-200 hover:scale-105 transition-transform duration-300 ease-in-out bg-white"
       />
     </div>
   ));
 
   return (
-    <section className="py-8 bg-[#F5F5DC] dark:bg-gray-800">
-      <div className="container px-6 mx-auto space-y-6 text-center lg:px-8 lg:space-y-8">
-        <h2 className="text-3xl font-bold text-[#6B4226] mb-4">Our Valued Clients</h2>
-        <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-          Trusted by leading companies in the furniture, interior design, and upholstery industries.
+    <section className="py-16 bg-[#F9F5F1] dark:bg-gray-900">
+      <div className="max-w-6xl mx-auto px-6 text-center">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-[#5C3A1E] mb-4">
+          Trusted by Qatar’s Top Interiors & Furnishing Brands
+        </h2>
+        <p className="text-base md:text-lg text-gray-700 dark:text-gray-300 max-w-3xl mx-auto">
+          We are proud to serve some of the most respected names in curtains, carpets, upholstery, and interior design. Their trust is our biggest reward.
         </p>
 
-        <div className="carousel-container mt-6">
+        <div className="mt-10">
           <AliceCarousel
             autoPlay
-            autoPlayInterval={1500}
+            autoPlayInterval={1800}
             infinite
             disableButtonsControls
             disableDotsControls
-            items={items}
             mouseTracking
+            items={items}
             responsive={{
               0: { items: 2 },
               640: { items: 3 },

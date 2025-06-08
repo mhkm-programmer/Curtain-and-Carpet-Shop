@@ -43,27 +43,33 @@ const HeroSlider = () => {
     <div className="relative w-full h-screen overflow-hidden">
       {/* Hero Slider */}
       <Slider {...sliderSettings}>
-        {slides.map((slide, index) => (
-          <div key={index} className="w-full h-screen">
-            {slide.type === "image" ? (
-              <img
-                src={slide.src}
-                alt={`Hero slide ${index + 1}`}
-                className="w-full h-screen object-cover"
-                loading="lazy"
-              />
-            ) : (
-              <iframe
-                src={`${slide.src}?autoplay=1&muted=1`}
-                allow="autoplay; fullscreen"
-                allowFullScreen
-                title={`Hero video ${index + 1}`}
-                className="w-full h-screen border-0"
-              />
-            )}
+  {slides.map((slide, index) => (
+    <div key={index} className="relative w-full h-screen overflow-hidden">
+      {slide.type === "image" ? (
+        <img
+          src={slide.src}
+          alt={`Hero slide ${index + 1}`}
+          className="w-full h-screen object-cover"
+          loading="lazy"
+        />
+      ) : (
+        <div className="relative w-full h-screen">
+          <div className="absolute top-0 left-0 w-full h-full">
+            <iframe
+              src={`${slide.src}?autoplay=1&muted=1`}
+              allow="autoplay; fullscreen"
+              allowFullScreen
+              title={`Hero video ${index + 1}`}
+              className="w-full h-full object-cover"
+              style={{ border: "none" }}
+            />
           </div>
-        ))}
-      </Slider>
+        </div>
+      )}
+    </div>
+  ))}
+</Slider>
+
 
       {/* Overlay Content */}
       <div

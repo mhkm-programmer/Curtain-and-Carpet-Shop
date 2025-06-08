@@ -4,6 +4,7 @@ import {
   FaInstagram,
   FaPhoneAlt,
   FaWhatsapp,
+  FaMapMarkerAlt,
 } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
@@ -12,7 +13,7 @@ const Footer = () => {
     {
       title: "Curtains & Blinds",
       links: [
-        { label: "Home & Office Curtains", to: "/curtains/curtain" },
+        { label: "Home & Office Curtains", to: "/curtains/officeCurtain" },
         { label: "Home & Office Blinds", to: "/curtains/blinds" },
         { label: "Roller Curtains", to: "/curtains/roller" },
       ],
@@ -51,8 +52,8 @@ const Footer = () => {
           <NavLink to="/" className="flex items-center space-x-3 mb-6">
             <div className="w-16 h-16 rounded-full bg-white flex justify-center items-center shadow-lg">
               <img
-                src="https://8upload.com/image/67979661192f3/AL-FWZ_Tradign_Contracting_Logo.png"
-                alt="AL-FWZ Logo"
+                src="https://8upload.com/image/6841a8b56f91e/Curtain___Carpet_logo__1_.jpg"
+                alt="Curtain and Carpets Shop Logo"
                 className="w-12"
               />
             </div>
@@ -60,7 +61,7 @@ const Footer = () => {
               Curtains and Carpets Shop
             </h2>
           </NavLink>
-          <p className="text-sm leading-relaxed text-gray-400">
+          <p className="text-sm text-wrap leading-relaxed text-gray-400">
             Trusted name in Qatar for Curtains, Blinds, Cabinets, Carpets, and
             Interior Decor. We deliver quality with professionalism and passion.
           </p>
@@ -93,12 +94,12 @@ const Footer = () => {
         <p className="mb-4 md:mb-0 text-center">
           &copy; {new Date().getFullYear()}{" "}
           <NavLink to="/" className="hover:text-violet-400 font-medium">
-             Curtains and Carpets Shop
+            Curtains and Carpets Shop
           </NavLink>{" "}
           - All Rights Reserved.
         </p>
         <div className="flex space-x-6">
-          <a href="tel:+97455760872" className="hover:text-violet-400">
+          <a href="tel:+97466675946" className="hover:text-violet-400">
             <FaPhoneAlt size={18} />
           </a>
           <a
@@ -118,7 +119,7 @@ const Footer = () => {
             <FaInstagram size={18} />
           </a>
           <a
-            href="https://wa.me/+97455760872"
+            href="https://wa.me/+97466675946"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-violet-400"
@@ -126,10 +127,18 @@ const Footer = () => {
             <FaWhatsapp size={18} />
           </a>
           <a
-            href="mailto:qatarwintrading@gmail.com"
+            href="mailto:rashed.khan.rk143@gmail.com"
             className="hover:text-violet-400"
           >
             <FaGoogle size={18} />
+          </a>
+          <a
+            href="https://g.co/kgs/TvC8hir"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-violet-400"
+          >
+            <FaMapMarkerAlt size={18} />
           </a>
         </div>
       </div>
