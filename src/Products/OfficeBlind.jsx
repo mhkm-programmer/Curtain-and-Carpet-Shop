@@ -16,7 +16,7 @@ const BlindsCurtains = () => {
       <PageTitle title="Home & Office Blinds Curtains – Control Light & Privacy" />
 
       <ParallaxSection
-        imagePath="https://8upload.com/image/blinds-banner.jpg"
+        imagePath="https://8upload.com/image/6846ac0666ea4/Blind__Curtains-min__1_.png"
         title="Stylish Blinds for Modern Living & Working Spaces"
         subTitle="Versatile, Durable & Easy to Use"
       />

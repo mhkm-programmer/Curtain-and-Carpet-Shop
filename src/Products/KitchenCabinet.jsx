@@ -14,7 +14,7 @@ const KitchenCabinet = () => {
       <PageTitle title="Kitchen Cabinets – Tailored for Function & Style" />
 
       <ParallaxSection
-        imagePath="https://8upload.com/image/67c2f639a4435/cabinet-banner.jpg"
+        imagePath="https://8upload.com/image/6846ac0856e2e/Kitchen_Cabinet-min.jpg"
         title="Kitchen Cabinets That Inspire Culinary Creativity"
         subTitle="Modern. Practical. Elegant."
       />

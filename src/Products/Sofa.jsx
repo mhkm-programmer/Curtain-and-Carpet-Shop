@@ -17,10 +17,10 @@ const SofaMojlishService = () => {
 
   return (
     <div className="font-sans text-gray-900">
-      <PageTitle title="Sofa & Mojlish Service in Qatar | AZLAAN CONTRACTING W.L.L" />
+      <PageTitle title="Sofa & Mojlish Service in Qatar | Curtains and Carpets Shop" />
 
       <ParallaxSection
-        imagePath="https://8upload.com/image/684a1d4a99e57/sofa-parallax.jpg"
+        imagePath="https://8upload.com/image/6846ac3fe00b1/Sofa__Mojlish-min.png"
         title="Elegant Sofa & Mojlish Solutions"
         subTitle="Comfort • Style • Craftsmanship"
       />

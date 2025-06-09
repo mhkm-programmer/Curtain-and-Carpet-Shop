@@ -14,7 +14,7 @@ const BedroomCabinet = () => {
       <PageTitle title="Bedroom Cabinets – Organize with Elegance" />
 
       <ParallaxSection
-        imagePath="https://8upload.com/image/bedroom-cabinet-banner.jpg"
+        imagePath="https://8upload.com/image/6846ac0624b3d/Bedroom_Cabinet.jpg"
         title="Elegant Bedroom Cabinets for Your Personal Sanctuary"
         subTitle="Functional. Stylish. Customized."
       />

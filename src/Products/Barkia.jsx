@@ -17,9 +17,9 @@ const Barkia = () => {
 
   return (
     <div className="font-sans text-gray-800">
-      <PageTitle title="SPVC | PVC | Wooden Flooring | AZLAAN CONTRACTING W.L.L" />
+      <PageTitle title="SPVC | PVC | Wooden Flooring | Curtains and Carpets Shop" />
       <ParallaxSection
-        imagePath="https://8upload.com/image/67a7f51fa667f/Flooring-min.jpg"
+        imagePath="https://8upload.com/image/6846b0d902c20/SPVC-min.png"
         title="Flooring Solutions"
         subTitle="SPVC • Wooden • PVC • Laminate"
       />

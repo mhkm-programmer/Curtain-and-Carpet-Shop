@@ -15,7 +15,7 @@ const Curtains = () => {
       <PageTitle title="Home & Office Curtains – Style Meets Function" />
 
       <ParallaxSection
-        imagePath="https://8upload.com/image/curtains-banner.jpg"
+        imagePath="https://8upload.com/image/6846ac05d0e26/Bedroom_Cabinet-min.jpg"
         title="Beautiful Curtains for Every Space"
         subTitle="Privacy, Style & Comfort"
       />

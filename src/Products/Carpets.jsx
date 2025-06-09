@@ -17,9 +17,9 @@ const Carpets = () => {
 
   return (
     <div className="font-sans text-gray-800">
-      <PageTitle title="Carpet Supply & Installation | AZLAAN CONTRACTING W.L.L" />
+      <PageTitle title="Carpet Supply & Installation | Curtains and Carpets Shop" />
       <ParallaxSection
-        imagePath="https://8upload.com/image/67a7f51fa667f/Flooring-min.jpg"
+        imagePath="https://8upload.com/image/6846ac072597b/Carpets-min.png"
         title="Luxury Carpet Solutions"
         subTitle="Elegant • Custom-fit • Commercial & Residential"
       />

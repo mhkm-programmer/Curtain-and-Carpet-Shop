@@ -16,7 +16,7 @@ const TvCabinet = () => {
       <PageTitle title="Custom TV Cabinets – Wall Units, Stands & More" />
 
       <ParallaxSection
-        imagePath="https://8upload.com/image/67c2f639a4435/cabinet-banner.jpg"
+        imagePath="https://8upload.com/image/6846ac4040b83/TV_Cabinet-min.png"
         title="TV Cabinets That Match Your Style"
         subTitle="Modern. Organized. Seamless."
       />

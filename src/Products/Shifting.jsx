@@ -21,7 +21,7 @@ const ShiftingMovingService = () => {
       <PageTitle title="Shifting and Moving Service in Qatar | AZLAAN CONTRACTING W.L.L" />
 
       <ParallaxSection
-        imagePath="https://8upload.com/image/684a1cc8d76d0/moving-parallax.jpg"
+        imagePath="https://8upload.com/image/6846ac3f4801a/Shifting-2.jpg"
         title="Reliable Shifting & Moving"
         subTitle="Safe • Efficient • Professional"
       />

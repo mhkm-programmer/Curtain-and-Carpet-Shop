@@ -15,7 +15,7 @@ const Curtain = () => {
       <PageTitle title="Curtains – Elegance & Comfort for Every Room" />
 
       <ParallaxSection
-        imagePath="https://8upload.com/image/curtains-banner.jpg"
+        imagePath="https://8upload.com/image/6846ac07ba095/Curtains-min.jpg"
         title="Curtains That Transform Your Space"
         subTitle="Style, Privacy & Light Control"
       />

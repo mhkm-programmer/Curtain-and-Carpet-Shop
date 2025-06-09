@@ -16,7 +16,7 @@ const RollerCurtains = () => {
       <PageTitle title="Roller Curtains – Minimalist & Functional Window Solutions" />
 
       <ParallaxSection
-        imagePath="https://8upload.com/image/roller-curtains-banner.jpg"
+        imagePath="https://8upload.com/image/6846ac3ee530e/Roller_Curtains-min.png"
         title="Sleek Roller Curtains for Home & Office"
         subTitle="Simple, Stylish & Easy to Use"
       />

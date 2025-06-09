@@ -18,7 +18,7 @@ const Wallpapers = () => {
       <PageTitle title="Luxury Wallpapers – Rooms, Offices & Showrooms" />
 
       <ParallaxSection
-        imagePath="https://8upload.com/image/67ab0ba8e2452/office-banner.jpg"
+        imagePath="https://8upload.com/image/6846ac4096e54/Wallpaper-2.png"
         title="Wallpapers That Redefine Interior Style"
         subTitle="We Bring Art to Your Walls"
       />

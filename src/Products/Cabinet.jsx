@@ -16,7 +16,7 @@ const Cabinet = () => {
       <PageTitle title="Custom Cabinets – Kitchen, Office & More" />
 
       <ParallaxSection
-        imagePath="https://8upload.com/image/67c2f639a4435/cabinet-banner.jpg"
+        imagePath="https://8upload.com/image/6846ac06d62c1/Cabinet-min.jpg"
         title="Cabinets Designed to Fit Your Space"
         subTitle="Functional. Stylish. Durable."
       />
