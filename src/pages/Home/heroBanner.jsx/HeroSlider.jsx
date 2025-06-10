@@ -1,21 +1,9 @@
-import React, { useState } from "react";
+
+import React from "react";
 import Slider from "react-slick";
 import { FaMapMarkerAlt, FaWhatsapp } from "react-icons/fa";
 
 const HeroSlider = () => {
-  const [showOptions, setShowOptions] = useState(false);
-
-  const colors = {
-    background: "#F9F5F1",
-    primaryText: "#FFFFFF",
-    subtitle: "#FFFFFF",
-    accent: "#8C6239",
-    buttonBase: "#5A4438",
-    buttonHover: "#6B5847",
-  };
-
-  const handleShowOptions = () => setShowOptions(true);
-
   const sliderSettings = {
     dots: true,
     infinite: true,
@@ -31,91 +19,192 @@ const HeroSlider = () => {
   };
 
   const slides = [
-    { type: "image", src: "https://8upload.com/image/6841a9c551ebd/1080_13.jpg" },
-    { type: "video", videoType: "streamable", src: "https://streamable.com/e/yfn739" },
-    { type: "video", videoType: "streamable", src: "https://streamable.com/e/hi2vs6" },
-    { type: "video", videoType: "streamable", src: "https://streamable.com/e/c8ulgh" },
-    { type: "video", videoType: "streamable", src: "https://streamable.com/e/7tf8q3" },
-    { type: "image", src: "https://8upload.com/image/6841a9877538d/1080_2.jpg" },
+    {
+      type: "image",
+      src: "https://8upload.com/image/6841a9c551ebd/1080_13.jpg",
+      title: "Luxurious Curtains Collection",
+      subtitle: "Tailored elegance for modern living spaces.",
+      buttons: [
+        {
+          label: "Visit Our Showroom",
+          href: "https://g.co/kgs/TvC8hir",
+          bgColor: "#B8860B",
+          hoverColor: "#a97a0a",
+          icon: <FaMapMarkerAlt />,
+        },
+        {
+          label: "Chat on WhatsApp",
+          href: "https://wa.me/+97466675946",
+          bgColor: "#25D366",
+          hoverColor: "#1ebe5b",
+          icon: <FaWhatsapp />,
+        },
+      ],
+    },
+     {
+      type: "image",
+      src: "https://8upload.com/image/6841a9877538d/1080_2.jpg",
+        title: "Customized Curtain Fabrics",
+      subtitle: "Elegant & functional designs tailored for you.",
+      buttons: [
+        {
+          label: "Visit Our Showroom",
+          href: "https://g.co/kgs/TvC8hir",
+          bgColor: "#B8860B",
+          hoverColor: "#a97a0a",
+          icon: <FaMapMarkerAlt />,
+        },
+        {
+          label: "Chat on WhatsApp",
+          href: "https://wa.me/+97466675946",
+          bgColor: "#25D366",
+          hoverColor: "#1ebe5b",
+          icon: <FaWhatsapp />,
+        },
+      ],
+    },
+     {
+      type: "image",
+      src: "https://8upload.com/image/6841a98848094/1080_6.jpg",
+        title: "Customized Curtain Fabrics",
+      subtitle: "Elegant & functional designs tailored for you.",
+      buttons: [
+        {
+          label: "Visit Our Showroom",
+          href: "https://g.co/kgs/TvC8hir",
+          bgColor: "#B8860B",
+          hoverColor: "#a97a0a",
+          icon: <FaMapMarkerAlt />,
+        },
+        {
+          label: "Chat on WhatsApp",
+          href: "https://wa.me/+97466675946",
+          bgColor: "#25D366",
+          hoverColor: "#1ebe5b",
+          icon: <FaWhatsapp />,
+        },
+      ],
+    },
+    {
+      type: "image",
+      src: "https://8upload.com/image/6841ab2679df6/1080_2.jpg",
+      title: "Premium Cabinet Designs",
+      subtitle: "Soft textures, timeless comfort for every step.",
+        buttons: [
+        {
+          label: "Visit Our Showroom",
+          href: "https://g.co/kgs/TvC8hir",
+          bgColor: "#B8860B",
+          hoverColor: "#a97a0a",
+          icon: <FaMapMarkerAlt />,
+        },
+        {
+          label: "Chat on WhatsApp",
+          href: "https://wa.me/+97466675946",
+          bgColor: "#25D366",
+          hoverColor: "#1ebe5b",
+          icon: <FaWhatsapp />,
+        },
+      ],
+    },
+    // {
+    //   type: "video",
+    //   videoType: "streamable",
+    //   src: "https://streamable.com/e/yfn739",
+    //   title: "Live Curtain Installation",
+    //   subtitle: "See how we transform your space with style.",
+    //     buttons: [
+    //     {
+    //       label: "Visit Our Showroom",
+    //       href: "https://g.co/kgs/TvC8hir",
+    //       bgColor: "#B8860B",
+    //       hoverColor: "#a97a0a",
+    //       icon: <FaMapMarkerAlt />,
+    //     },
+    //     {
+    //       label: "Chat on WhatsApp",
+    //       href: "https://wa.me/+97466675946",
+    //       bgColor: "#25D366",
+    //       hoverColor: "#1ebe5b",
+    //       icon: <FaWhatsapp />,
+    //     },
+    //   ],
+    // },
+    // {
+    //   type: "video",
+    //   videoType: "streamable",
+    //   src: "https://streamable.com/e/c8ulgh",
+    //   title: "Customized Curtain Fabrics",
+    //   subtitle: "Elegant & functional designs tailored for you.",
+    //  buttons: [
+    //     {
+    //       label: "Visit Our Showroom",
+    //       href: "https://g.co/kgs/TvC8hir",
+    //       bgColor: "#B8860B",
+    //       hoverColor: "#a97a0a",
+    //       icon: <FaMapMarkerAlt />,
+    //     },
+    //     {
+    //       label: "Chat on WhatsApp",
+    //       href: "https://wa.me/+97466675946",
+    //       bgColor: "#25D366",
+    //       hoverColor: "#1ebe5b",
+    //       icon: <FaWhatsapp />,
+    //     },
+    //   ],
+    // },
   ];
 
   return (
     <div className="relative w-full h-screen overflow-hidden">
-      {/* Hero Slider */}
       <Slider {...sliderSettings}>
-  {slides.map((slide, index) => (
-    <div key={index} className="relative w-full h-screen overflow-hidden">
-      {slide.type === "image" ? (
-        <img
-          src={slide.src}
-          alt={`Hero slide ${index + 1}`}
-          className="w-full h-screen object-cover"
-          loading="lazy"
-        />
-      ) : (
-        <div className="relative w-full h-screen">
-          <div className="absolute top-0 left-0 w-full h-full">
-            <iframe
-              src={`${slide.src}?autoplay=1&muted=1`}
-              allow="autoplay; fullscreen"
-              allowFullScreen
-              title={`Hero video ${index + 1}`}
-              className="w-full h-full object-cover"
-              style={{ border: "none" }}
-            />
-          </div>
-        </div>
-      )}
-    </div>
-  ))}
-</Slider>
+        {slides.map((slide, index) => (
+          <div key={index} className="relative w-full h-screen overflow-hidden">
+            {/* Media */}
+            {slide.type === "image" ? (
+              <img
+                src={slide.src}
+                alt={`Slide ${index + 1}`}
+                className="w-full h-screen object-cover"
+                loading="lazy"
+              />
+            ) : (
+              <iframe
+                src={`${slide.src}?autoplay=1&muted=1`}
+                allow="autoplay; fullscreen"
+                allowFullScreen
+                title={`Video ${index + 1}`}
+                className="w-full h-screen object-cover"
+                style={{ border: "none" }}
+              />
+            )}
+
+            {/* Overlay */}
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent px-6 pb-10 pt-14 text-white text-center">
+              <h1 className="text-3xl md:text-5xl font-bold mb-4">{slide.title}</h1>
+             <p className="text-lg md:text-xl max-w-2xl mb-6 text-center items-centre justify-center">{slide.subtitle}</p>
 
 
-      {/* Overlay Content */}
-      <div
-        className="absolute inset-0 flex flex-col items-center justify-center text-center px-6"
-        style={{ backgroundColor: "rgba(0, 0, 0, 0.4)", color: colors.primaryText }}
-      >
-        <h1 className="text-3xl md:text-5xl font-extrabold leading-tight max-w-4xl">
-          Elegant Curtains & Carpets for Home & Office
-        </h1>
-        <p className="mt-4 text-base md:text-lg max-w-2xl" style={{ color: colors.subtitle }}>
-          <strong>Curtains and Carpets Shop</strong> offers premium custom-made{" "}
-          <strong>curtains</strong> and <strong>carpets</strong> that elevate your
-          interior with elegance and functionality.
-        </p>
-
-        {/* CTA Section */}
-        <div className="mt-6">
-          {!showOptions ? (
-            <button
-              onClick={handleShowOptions}
-              className="bg-[#B8860B] hover:bg-[#a97a0a] text-white font-semibold px-6 py-3 rounded-xl shadow-lg transition-all duration-300"
-            >
-              Get a Free Measurement
-            </button>
-          ) : (
-            <div className="flex flex-col sm:flex-row items-center gap-4">
-              <a
-                href="https://g.co/kgs/TvC8hir"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-[#B8860B] hover:bg-[#a97a0a] text-white px-5 py-3 rounded-lg font-medium transition duration-300"
-              >
-                <FaMapMarkerAlt /> Visit Our Showroom
-              </a>
-              <a
-                href="https://wa.me/+97466675946"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-[#25D366] hover:bg-[#1ebe5b] text-white px-5 py-3 rounded-lg font-medium transition duration-300"
-              >
-                <FaWhatsapp /> Chat on WhatsApp
-              </a>
+              <div className="flex flex-wrap gap-4 justify-center">
+                {slide.buttons.map((btn, btnIdx) => (
+                  <a
+                    key={btnIdx}
+                    href={btn.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-5 py-3 rounded-lg font-semibold transition duration-300"
+                    style={{ backgroundColor: btn.bgColor }}
+                    onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = btn.hoverColor)}
+                    onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = btn.bgColor)}
+                  >
+                    {btn.icon} {btn.label}
+                  </a>
+                ))}
+              </div>
             </div>
-          )}
-        </div>
-      </div>
+          </div>
+        ))}
+      </Slider>
     </div>
   );
 };
