@@ -4,15 +4,15 @@ import PageTitle from "../pages/reusable/PageTitle";
 import ParallaxSection from "../pages/reusable/Parallax";
 
 const SofaMojlishService = () => {
- const mediaGallery = [
-      { type: "image", src: "https://8upload.com/image/68337d45aa60e/IMG-20250518-WA0039.jpg" },
-  { type: "video", src: "https://streamable.com/e/md5pe4" },
-  { type: "image", src: "https://8upload.com/image/68337cbb8461d/IMG-20250518-WA0006.jpg" },
-  { type: "video", src: "https://streamable.com/e/a82dgf" },
-  { type: "image", src: "https://8upload.com/image/67ab0bd2011aa/office2.jpg" },
-  { type: "video", src: "https://streamable.com/e/cxrr13" },
-  { type: "image", src: "https://8upload.com/image/67ab0bdb0ea7e/office4.jpg" },
-  { type: "image", src: "https://8upload.com/image/67ab0be4cf914/office6.jpg" },
+  const mediaGallery = [
+    { type: "image", src: "https://8upload.com/image/6847fd0e958b3/1080_5.jpg" },
+    { type: "video", src: "https://streamable.com/e/1sh4bj" },
+    { type: "image", src: "https://8upload.com/image/6847fd0ed9c34/1080_6.jpg" },
+    { type: "video", src: "https://streamable.com/e/1xxs1g" },
+    { type: "image", src: "https://8upload.com/image/6847fd0f24a0d/1080_7.jpg" },
+    { type: "video", src: "https://streamable.com/e/smyhrw" },
+    { type: "image", src: "https://8upload.com/image/6847fd0f59190/1080_8.jpg" },
+    { type: "image", src: "https://8upload.com/image/6847fd0f7504f/1080_9.jpg" },
   ];
 
   return (
@@ -27,18 +27,17 @@ const SofaMojlishService = () => {
 
       {/* Intro Section */}
       <section className="max-w-7xl mx-auto px-6 py-16 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#4A342E]">
+        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#B8860B]">
           Premium Sofa & Mojlish Services Across Qatar
         </h2>
         <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-          AZLAAN CONTRACTING W.L.L specializes in exquisite sofa and mojlish design, repair, and installation, combining traditional craftsmanship with modern comfort to transform your living spaces.
+          Curtains and Carpets Shop specializes in exquisite sofa and mojlish design, repair, and installation, combining traditional craftsmanship with modern comfort to transform your living spaces.
         </p>
       </section>
 
-      
       {/* Gallery */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <h2 className="text-3xl font-semibold text-center mb-10">Gallery: Our Work in Action</h2>
+        <h2 className="text-3xl font-semibold text-center mb-10 text-[#B8860B]">Gallery: Our Work in Action</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {mediaGallery.map((media, index) => (
             <div
@@ -72,18 +71,18 @@ const SofaMojlishService = () => {
       <section className="bg-[#f9f7f4] py-20 px-6">
         <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 text-center">
           <div className="bg-white p-8 shadow-lg rounded-xl hover:shadow-xl transition">
-            <FaCouch size={40} className="text-[#4A342E] mx-auto mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Custom Sofa Designs</h3>
+            <FaCouch size={40} className="text-[#B8860B] mx-auto mb-4" />
+            <h3 className="text-xl font-semibold mb-2 text-[#B8860B]">Custom Sofa Designs</h3>
             <p className="text-gray-700">Tailored to your style and comfort preferences using premium materials.</p>
           </div>
           <div className="bg-white p-8 shadow-lg rounded-xl hover:shadow-xl transition">
-            <FaPalette size={40} className="text-[#4A342E] mx-auto mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Traditional Mojlish Craftsmanship</h3>
+            <FaPalette size={40} className="text-[#B8860B] mx-auto mb-4" />
+            <h3 className="text-xl font-semibold mb-2 text-[#B8860B]">Traditional Mojlish Craftsmanship</h3>
             <p className="text-gray-700">Handcrafted mojlish fittings that add cultural elegance to your spaces.</p>
           </div>
           <div className="bg-white p-8 shadow-lg rounded-xl hover:shadow-xl transition">
-            <FaStar size={40} className="text-[#4A342E] mx-auto mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Durability & Comfort</h3>
+            <FaStar size={40} className="text-[#B8860B] mx-auto mb-4" />
+            <h3 className="text-xl font-semibold mb-2 text-[#B8860B]">Durability & Comfort</h3>
             <p className="text-gray-700">Quality craftsmanship ensuring long-lasting furniture with superior comfort.</p>
           </div>
         </div>
@@ -91,38 +90,38 @@ const SofaMojlishService = () => {
 
       {/* Testimonials */}
       <section className="py-20 px-6 bg-white text-center">
-        <h3 className="text-3xl font-bold text-[#4A342E] mb-10">What Our Clients Say</h3>
+        <h3 className="text-3xl font-bold text-[#B8860B] mb-10">What Our Clients Say</h3>
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
           <div className="bg-gray-100 p-8 rounded-xl shadow-md italic text-gray-700">
-            “AZLAAN transformed our living room with elegant sofas and mojlish — outstanding quality and craftsmanship!”
+            “Curtains and Carpets Shop transformed our living room with elegant sofas and mojlish — outstanding quality and craftsmanship!”
             <br />
-            <span className="block mt-4 font-semibold text-[#4A342E]">— Fatima H., Doha</span>
+            <span className="block mt-4 font-semibold text-[#B8860B]">— Fatima H., Doha</span>
           </div>
           <div className="bg-gray-100 p-8 rounded-xl shadow-md italic text-gray-700">
             “Excellent service and attention to detail. Our mojlish looks beautiful and fits perfectly.”
             <br />
-            <span className="block mt-4 font-semibold text-[#4A342E]">— Khalid S., Al Wakrah</span>
+            <span className="block mt-4 font-semibold text-[#B8860B]">— Khalid S., Al Wakrah</span>
           </div>
         </div>
       </section>
 
       {/* Why Choose Us */}
       <section className="bg-[#f9f7f4] py-20 px-6 text-center">
-        <h3 className="text-3xl font-bold text-[#4A342E] mb-10">Why Choose AZLAAN?</h3>
+        <h3 className="text-3xl font-bold text-[#B8860B] mb-10">Why Choose Curtains and Carpets Shop?</h3>
         <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
           <div className="bg-white p-6 rounded-xl shadow-md">
-            <FaUsers size={36} className="text-[#4A342E] mx-auto mb-4" />
-            <h4 className="text-lg font-semibold mb-2">Skilled Artisans</h4>
+            <FaUsers size={36} className="text-[#B8860B] mx-auto mb-4" />
+            <h4 className="text-lg font-semibold mb-2 text-[#B8860B]">Skilled Artisans</h4>
             <p className="text-gray-700">Experienced craftsmen passionate about preserving traditional techniques with modern comfort.</p>
           </div>
           <div className="bg-white p-6 rounded-xl shadow-md">
-            <FaHandshake size={36} className="text-[#4A342E] mx-auto mb-4" />
-            <h4 className="text-lg font-semibold mb-2">Customer Satisfaction</h4>
+            <FaHandshake size={36} className="text-[#B8860B] mx-auto mb-4" />
+            <h4 className="text-lg font-semibold mb-2 text-[#B8860B]">Customer Satisfaction</h4>
             <p className="text-gray-700">Committed to delivering excellence with transparent communication and aftercare support.</p>
           </div>
           <div className="bg-white p-6 rounded-xl shadow-md">
-            <FaStar size={36} className="text-[#4A342E] mx-auto mb-4" />
-            <h4 className="text-lg font-semibold mb-2">Premium Materials</h4>
+            <FaStar size={36} className="text-[#B8860B] mx-auto mb-4" />
+            <h4 className="text-lg font-semibold mb-2 text-[#B8860B]">Premium Materials</h4>
             <p className="text-gray-700">Only the best fabrics, wood, and finishes to ensure durability and aesthetic appeal.</p>
           </div>
         </div>
@@ -132,12 +131,15 @@ const SofaMojlishService = () => {
       <section className="bg-[#B8860B] py-20 text-white text-center px-4 sm:px-6 lg:px-8">
         <h3 className="text-3xl md:text-4xl font-bold mb-4">Ready to Beautify Your Space? Contact Us Now!</h3>
         <p className="text-lg mb-6">Get expert consultation and custom sofa & mojlish solutions tailored for you.</p>
-        <a
-          href="https://wa.me/97470373588"
-          className="inline-block bg-white text-[#4A342E] font-semibold px-6 py-3 rounded-xl shadow-md hover:bg-gray-100 transition-all duration-300"
+       <a
+          href="https://wa.me/97466675946"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-[#25D366] text-[#1F1F1F]  font-semibold px-6 py-3 rounded-xl shadow hover:bg-[#1ebe5b] transition"
         >
-          WhatsApp Us
+          Contact Us on WhatsApp
         </a>
+
       </section>
     </div>
   );
