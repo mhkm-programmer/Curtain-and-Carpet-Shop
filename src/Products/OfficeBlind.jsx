@@ -1,15 +1,16 @@
 import PageTitle from "../pages/reusable/PageTitle";
 import ParallaxSection from "../pages/reusable/Parallax";
 
-const mediaGallery = [
-  { type: "image", src: "https://8upload.com/image/blinds1.jpg" },
-  { type: "video", src: "https://streamable.com/e/blindsVid1" },
-  { type: "image", src: "https://8upload.com/image/blinds2.jpg" },
-  { type: "video", src: "https://streamable.com/e/blindsVid2" },
-  { type: "image", src: "https://8upload.com/image/blinds3.jpg" },
-  { type: "image", src: "https://8upload.com/image/blinds4.jpg" },
-];
-
+ const mediaGallery = [
+      { type: "image", src: "https://8upload.com/image/68337d45aa60e/IMG-20250518-WA0039.jpg" },
+  { type: "video", src: "https://streamable.com/e/md5pe4" },
+  { type: "image", src: "https://8upload.com/image/68337cbb8461d/IMG-20250518-WA0006.jpg" },
+  { type: "video", src: "https://streamable.com/e/a82dgf" },
+  { type: "image", src: "https://8upload.com/image/67ab0bd2011aa/office2.jpg" },
+  { type: "video", src: "https://streamable.com/e/cxrr13" },
+  { type: "image", src: "https://8upload.com/image/67ab0bdb0ea7e/office4.jpg" },
+  { type: "image", src: "https://8upload.com/image/67ab0be4cf914/office6.jpg" },
+  ];
 const BlindsCurtains = () => {
   return (
     <div className="font-sans text-[#1F1F1F] bg-white">
@@ -48,9 +49,9 @@ const BlindsCurtains = () => {
         </div>
       </section>
 
-      {/* Gallery */}
+        {/* Gallery */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <h2 className="text-3xl font-semibold text-center mb-10">Gallery: Our Blinds Curtains Projects</h2>
+        <h2 className="text-3xl font-semibold text-center mb-10">Gallery: Our Work in Action</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {mediaGallery.map((media, index) => (
             <div

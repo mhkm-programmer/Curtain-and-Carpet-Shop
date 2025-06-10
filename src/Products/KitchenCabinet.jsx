@@ -1,13 +1,16 @@
 import PageTitle from "../pages/reusable/PageTitle";
 import ParallaxSection from "../pages/reusable/Parallax";
 
-const mediaGallery = [
-  { type: "image", src: "https://8upload.com/image/67c2f62d6b3e4/cabinet1.jpg" },
-  { type: "image", src: "https://8upload.com/image/67c2f6307b02f/cabinet2.jpg" },
-  { type: "image", src: "https://8upload.com/image/67c2f633d4ff2/cabinet3.jpg" },
-  { type: "image", src: "https://8upload.com/image/67c2f636bfb36/cabinet4.jpg" },
-];
-
+ const mediaGallery = [
+      { type: "image", src: "https://8upload.com/image/68337d45aa60e/IMG-20250518-WA0039.jpg" },
+  { type: "video", src: "https://streamable.com/e/md5pe4" },
+  { type: "image", src: "https://8upload.com/image/68337cbb8461d/IMG-20250518-WA0006.jpg" },
+  { type: "video", src: "https://streamable.com/e/a82dgf" },
+  { type: "image", src: "https://8upload.com/image/67ab0bd2011aa/office2.jpg" },
+  { type: "video", src: "https://streamable.com/e/cxrr13" },
+  { type: "image", src: "https://8upload.com/image/67ab0bdb0ea7e/office4.jpg" },
+  { type: "image", src: "https://8upload.com/image/67ab0be4cf914/office6.jpg" },
+  ];
 const KitchenCabinet = () => {
   return (
     <div className="font-sans text-[#1F1F1F] bg-white">
@@ -46,20 +49,33 @@ const KitchenCabinet = () => {
         </div>
       </section>
 
-      {/* Gallery */}
+       {/* Gallery */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <h2 className="text-3xl font-semibold text-center mb-10">Gallery: Kitchen Cabinet Designs</h2>
+        <h2 className="text-3xl font-semibold text-center mb-10">Gallery: Our Work in Action</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {mediaGallery.map((media, index) => (
             <div
               key={index}
               className="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
             >
-              <img
-                src={media.src}
-                alt={`Kitchen Cabinet ${index + 1}`}
-                className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
-              />
+              {media.type === "image" ? (
+                <img
+                  src={media.src}
+                  alt={`Media ${index + 1}`}
+                  className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
+                />
+              ) : (
+                <div className="w-full h-64 overflow-hidden">
+                  <iframe
+                    src={media.src}
+                    title={`Video ${index + 1}`}
+                    className="w-full h-full"
+                    frameBorder="0"
+                    allow="autoplay; fullscreen"
+                    allowFullScreen
+                  />
+                </div>
+              )}
             </div>
           ))}
         </div>

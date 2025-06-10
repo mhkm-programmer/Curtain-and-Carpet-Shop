@@ -2,14 +2,13 @@ import PageTitle from "../pages/reusable/PageTitle";
 import ParallaxSection from "../pages/reusable/Parallax";
 
 const mediaGallery = [
-  { type: "image", src: "https://8upload.com/image/68337d45aa60e/IMG-20250518-WA0039.jpg" },
-  { type: "video", src: "https://streamable.com/e/md5pe4" },
-  { type: "image", src: "https://8upload.com/image/68337cbb8461d/IMG-20250518-WA0006.jpg" },
-  { type: "video", src: "https://streamable.com/e/a82dgf" },
-  { type: "image", src: "https://8upload.com/image/67ab0bd2011aa/office2.jpg" },
-  { type: "video", src: "https://streamable.com/e/cxrr13" },
-  { type: "image", src: "https://8upload.com/image/67ab0bdb0ea7e/office4.jpg" },
-  { type: "image", src: "https://8upload.com/image/67ab0be4cf914/office6.jpg" },
+  { type: "image", src: "https://8upload.com/image/6847e52cb38ff/wp2.jpg" },
+  { type: "video", src: "https://streamable.com/e/j23gqd" },
+  { type: "image", src: "https://8upload.com/image/6847e52d5bd7e/wp4.png" },
+  { type: "video", src: "https://streamable.com/e/a9i9qc" },
+  { type: "image", src: "https://8upload.com/image/6847e52dc7e1d/wp5.png" },
+  { type: "video", src: "https://streamable.com/e/yoi9h7" },
+  
 ];
 
 const Wallpapers = () => {
@@ -128,10 +127,10 @@ const Wallpapers = () => {
           Contact us now to schedule your free design consultation and receive professional guidance tailored to your interior.
         </p>
         <a
-          href="https://wa.me/97470373588"
+          href="https://wa.me/97466675946"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-white text-[#1F1F1F] font-semibold px-6 py-3 rounded-xl shadow hover:bg-gray-200 transition"
+          className="inline-block bg-[#25D366] text-[#1F1F1F]  font-semibold px-6 py-3 rounded-xl shadow hover:bg-[#1ebe5b] transition"
         >
           Contact Us on WhatsApp
         </a>
