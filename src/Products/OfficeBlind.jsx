@@ -111,14 +111,15 @@ const BlindsCurtains = () => {
         <p className="text-lg mb-6 max-w-3xl mx-auto">
           Contact us now for a free consultation and find the perfect blinds tailored to your needs.
         </p>
-        <a
-          href="https://wa.me/97470373588"
+      <a
+          href="https://wa.me/97466675946"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-white text-[#1F1F1F] font-semibold px-6 py-3 rounded-xl shadow hover:bg-gray-200 transition"
+          className="inline-block bg-[#25D366] text-[#1F1F1F]  font-semibold px-6 py-3 rounded-xl shadow hover:bg-[#1ebe5b] transition"
         >
-          Message Us on WhatsApp
+          Contact Us on WhatsApp
         </a>
+
       </section>
     </div>
   );
