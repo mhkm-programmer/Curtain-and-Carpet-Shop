@@ -1,16 +1,16 @@
 import PageTitle from "../pages/reusable/PageTitle";
 import ParallaxSection from "../pages/reusable/Parallax";
 
- const mediaGallery = [
-      { type: "image", src: "https://8upload.com/image/68337d45aa60e/IMG-20250518-WA0039.jpg" },
-  { type: "video", src: "https://streamable.com/e/md5pe4" },
-  { type: "image", src: "https://8upload.com/image/68337cbb8461d/IMG-20250518-WA0006.jpg" },
-  { type: "video", src: "https://streamable.com/e/a82dgf" },
-  { type: "image", src: "https://8upload.com/image/67ab0bd2011aa/office2.jpg" },
-  { type: "video", src: "https://streamable.com/e/cxrr13" },
-  { type: "image", src: "https://8upload.com/image/67ab0bdb0ea7e/office4.jpg" },
-  { type: "image", src: "https://8upload.com/image/67ab0be4cf914/office6.jpg" },
-  ];
+const mediaGallery = [
+  { type: "image", src: "https://8upload.com/image/684806436e651/IMG-20250531-WA0039.jpg" },
+  { type: "video", src: "https://streamable.com/e/ony41k" },
+  { type: "image", src: "https://8upload.com/image/684804ce2ba5a/TV_Cabinet_2.jpg" },
+  // { type: "video", src: "https://streamable.com/e/a82dgf" },
+  { type: "image", src: "https://8upload.com/image/68480643204cf/IMG-20250531-WA0036.jpg" },
+  // { type: "video", src: "https://streamable.com/e/cxrr13" },
+  { type: "image", src: "https://8upload.com/image/684804cd63c5f/1080_3.jpg" },
+  { type: "image", src: "https://8upload.com/image/684804cd367bf/1080_2.jpg" },
+];
 
 const Cabinet = () => {
   return (
@@ -25,7 +25,7 @@ const Cabinet = () => {
 
       {/* Intro Section */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
-        <h1 className="text-4xl font-bold mb-4">Premium Cabinets & Expert Craftsmanship</h1>
+        <h1 className="text-4xl font-bold mb-4 text-[#B8860B]">Premium Cabinets & Expert Craftsmanship</h1>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
           From kitchens to offices, our custom cabinets are built to maximize space and elevate design. High-quality materials, sleek finishes, and professional installation.
         </p>
@@ -34,7 +34,7 @@ const Cabinet = () => {
       {/* Service Highlights */}
       <section className="bg-[#F9F9F9] py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-semibold mb-10">What We Offer</h2>
+          <h2 className="text-3xl font-semibold mb-10 text-[#B8860B]">What We Offer</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             {[
               { title: "Free Consultation", icon: "📐" },
@@ -43,16 +43,16 @@ const Cabinet = () => {
             ].map((item, idx) => (
               <div key={idx} className="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
                 <div className="text-4xl mb-4">{item.icon}</div>
-                <h3 className="text-xl font-semibold">{item.title}</h3>
+                <h3 className="text-xl font-semibold text-[#B8860B]">{item.title}</h3>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-       {/* Gallery */}
+      {/* Gallery */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <h2 className="text-3xl font-semibold text-center mb-10">Gallery: Our Work in Action</h2>
+        <h2 className="text-3xl font-semibold text-center mb-10 text-[#B8860B]">Gallery: Our Work in Action</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {mediaGallery.map((media, index) => (
             <div
@@ -85,11 +85,11 @@ const Cabinet = () => {
       {/* Why Choose Us */}
       <section className="bg-[#1F1F1F] text-white py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">Why Choose Our Cabinets</h2>
+          <h2 className="text-3xl font-bold mb-6 text-[#B8860B]">Why Choose Our Cabinets</h2>
           <p className="text-lg max-w-2xl mx-auto mb-10">
             Engineered for beauty and built to last, our cabinets combine expert design with premium hardware and precision installation.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-6 text-lg">
+          <div className="flex flex-col sm:flex-row justify-center gap-6 text-lg text-[#B8860B]">
             <span>✔ Tailored Design</span>
             <span>✔ Durable Materials</span>
             <span>✔ Satisfaction Guaranteed</span>
@@ -100,7 +100,7 @@ const Cabinet = () => {
       {/* Testimonials */}
       <section className="bg-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-semibold mb-10">Client Testimonials</h2>
+          <h2 className="text-3xl font-semibold mb-10 text-[#B8860B]">Client Testimonials</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               {
@@ -128,10 +128,10 @@ const Cabinet = () => {
           Reach out today for a free consultation and discover how we can transform your space with custom cabinet solutions.
         </p>
         <a
-          href="https://wa.me/97470373588"
+          href="https://wa.me/97466675946"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-white text-[#1F1F1F] font-semibold px-6 py-3 rounded-xl shadow hover:bg-gray-200 transition"
+          className="inline-block bg-[#25D366] text-[#1F1F1F]  font-semibold px-6 py-3 rounded-xl shadow hover:bg-[#1ebe5b] transition"
         >
           Contact Us on WhatsApp
         </a>
