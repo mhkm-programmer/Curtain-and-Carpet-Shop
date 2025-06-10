@@ -1,19 +1,20 @@
 import PageTitle from "../pages/reusable/PageTitle";
 import ParallaxSection from "../pages/reusable/Parallax";
 
- const mediaGallery = [
-      { type: "image", src: "https://8upload.com/image/68337d45aa60e/IMG-20250518-WA0039.jpg" },
-  { type: "video", src: "https://streamable.com/e/md5pe4" },
-  { type: "image", src: "https://8upload.com/image/68337cbb8461d/IMG-20250518-WA0006.jpg" },
-  { type: "video", src: "https://streamable.com/e/a82dgf" },
-  { type: "image", src: "https://8upload.com/image/67ab0bd2011aa/office2.jpg" },
-  { type: "video", src: "https://streamable.com/e/cxrr13" },
-  { type: "image", src: "https://8upload.com/image/67ab0bdb0ea7e/office4.jpg" },
-  { type: "image", src: "https://8upload.com/image/67ab0be4cf914/office6.jpg" },
-  ];
+const mediaGallery = [
+  { type: "image", src: "https://8upload.com/image/684807f072bee/1080_3.jpg" },
+  { type: "video", src: "https://streamable.com/e/3et8g9" },
+  { type: "image", src: "https://8upload.com/image/684807f0b67e3/1080_4.jpg" },
+  { type: "video", src: "https://streamable.com/e/umbm0a" },
+  { type: "image", src: "https://8upload.com/image/684807f1202b9/1080_5.jpg" },
+  { type: "video", src: "https://streamable.com/e/o61omb" },
+  { type: "image", src: "https://8upload.com/image/684807f18f4d1/1080_7.jpg" },
+  { type: "image", src: "https://8upload.com/image/684807f1cf47e/1080_8.jpg" },
+];
+
 const Curtain = () => {
   return (
-    <div className="font-sans text-[#1F1F1F] bg-white">
+    <div className="font-sans bg-white text-[#1F1F1F]">
       <PageTitle title="Curtains – Elegance & Comfort for Every Room" />
 
       <ParallaxSection
@@ -24,7 +25,9 @@ const Curtain = () => {
 
       {/* Introduction */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
-        <h1 className="text-4xl font-bold mb-4">High-Quality Curtains for Home and Office</h1>
+        <h1 className="text-4xl font-bold mb-4 text-[#B8860B]">
+          High-Quality Curtains for Home and Office
+        </h1>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
           Our wide selection of curtains offers perfect solutions for privacy, light filtering, and aesthetic appeal.
           Crafted from premium fabrics with a variety of styles and colors to match your decor.
@@ -34,7 +37,9 @@ const Curtain = () => {
       {/* Features */}
       <section className="bg-[#F9F9F9] py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-semibold mb-10">Why Choose Our Curtains?</h2>
+          <h2 className="text-3xl font-semibold mb-10 text-[#B8860B]">
+            Why Choose Our Curtains?
+          </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             {[
               { title: "Durable & Stylish Fabrics", icon: "🧵" },
@@ -43,16 +48,18 @@ const Curtain = () => {
             ].map((item, idx) => (
               <div key={idx} className="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
                 <div className="text-4xl mb-4">{item.icon}</div>
-                <h3 className="text-xl font-semibold">{item.title}</h3>
+                <h3 className="text-xl font-semibold text-[#B8860B]">{item.title}</h3>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-        {/* Gallery */}
+      {/* Gallery */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <h2 className="text-3xl font-semibold text-center mb-10">Gallery: Our Work in Action</h2>
+        <h2 className="text-3xl font-semibold text-center mb-10 text-[#B8860B]">
+          Gallery: Our Work in Action
+        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {mediaGallery.map((media, index) => (
             <div
@@ -80,12 +87,14 @@ const Curtain = () => {
             </div>
           ))}
         </div>
-      </section>               
+      </section>
 
       {/* Testimonials */}
       <section className="bg-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-semibold mb-10">Customer Reviews</h2>
+          <h2 className="text-3xl font-semibold mb-10 text-[#B8860B]">
+            Customer Reviews
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               {
@@ -113,12 +122,12 @@ const Curtain = () => {
           Contact us now for a free consultation and discover the perfect curtains tailored to your needs.
         </p>
         <a
-          href="https://wa.me/97470373588"
+          href="https://wa.me/97466675946"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-white text-[#1F1F1F] font-semibold px-6 py-3 rounded-xl shadow hover:bg-gray-200 transition"
+          className="inline-block bg-[#25D366] text-[#1F1F1F] font-semibold px-6 py-3 rounded-xl shadow hover:bg-[#1ebe5b] transition"
         >
-          Message Us on WhatsApp
+          Contact Us on WhatsApp
         </a>
       </section>
     </div>
