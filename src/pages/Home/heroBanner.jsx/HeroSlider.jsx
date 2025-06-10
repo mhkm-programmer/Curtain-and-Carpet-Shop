@@ -182,7 +182,7 @@ const HeroSlider = () => {
             {/* Overlay */}
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent px-6 pb-10 pt-14 text-white text-center">
               <h1 className="text-3xl md:text-5xl font-bold mb-4">{slide.title}</h1>
-             <p className="text-lg md:text-xl max-w-2xl mb-6 text-center items-centre justify-center">{slide.subtitle}</p>
+             {/* <p className="text-lg md:text-xl max-w-2xl mb-6 text-center items-centre justify-center">{slide.subtitle}</p> */}
 
 
               <div className="flex flex-wrap gap-4 justify-center">
