@@ -65,7 +65,7 @@ const HeroSlider = () => {
     },
      {
       type: "image",
-      src: "https://8upload.com/image/684942a3ac3cf/Blinds_Curtains.jpg",
+      src: "https://8upload.com/image/68495aec81b69/Blinds_Curtains1.jpg",
         title: "Customized Blind Curtain",
       subtitle: "Elegant & functional designs tailored for you.",
       buttons: [
