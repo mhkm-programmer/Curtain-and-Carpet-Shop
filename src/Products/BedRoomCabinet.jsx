@@ -2,14 +2,14 @@ import PageTitle from "../pages/reusable/PageTitle";
 import ParallaxSection from "../pages/reusable/Parallax";
 
 const mediaGallery = [
-  { type: "image", src: "https://8upload.com/image/68337d45aa60e/IMG-20250518-WA0039.jpg" },
-  { type: "video", src: "https://streamable.com/e/md5pe4" },
-  { type: "image", src: "https://8upload.com/image/68337cbb8461d/IMG-20250518-WA0006.jpg" },
-  { type: "video", src: "https://streamable.com/e/a82dgf" },
-  { type: "image", src: "https://8upload.com/image/67ab0bd2011aa/office2.jpg" },
-  { type: "video", src: "https://streamable.com/e/cxrr13" },
-  { type: "image", src: "https://8upload.com/image/67ab0bdb0ea7e/office4.jpg" },
-  { type: "image", src: "https://8upload.com/image/67ab0be4cf914/office6.jpg" },
+  { type: "image", src: "https://8upload.com/image/6848e441ca318/IMG-20250531-WA0037.jpg" },
+  // { type: "video", src: "https://streamable.com/e/md5pe4" },
+  { type: "image", src: "https://8upload.com/image/6848e441dd146/IMG-20250531-WA0039.jpg" },
+  // { type: "video", src: "https://streamable.com/e/a82dgf" },
+  { type: "image", src: "https://8upload.com/image/6848e4421a09e/TV_Cabinet_2.jpg" },
+  // { type: "video", src: "https://streamable.com/e/cxrr13" },
+  { type: "image", src: "https://8upload.com/image/6848e4419d743/IMG-20250531-WA0036.jpg" },
+  // { type: "image", src: "https://8upload.com/image/67ab0be4cf914/office6.jpg" },
 ];
 
 const BedroomCabinet = () => {
