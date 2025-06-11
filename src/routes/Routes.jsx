@@ -71,6 +71,7 @@ const router = createBrowserRouter([
       { path: "/wallpaper", element: <Wallpapers /> },
     ],
   },
+  
 
   // Catch-all route
   {
