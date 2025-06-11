@@ -103,7 +103,7 @@ const Footer = () => {
             <FaPhoneAlt size={18} />
           </a>
           <a
-            href="https://www.facebook.com/profile.php?id=61573137238181&mibextid=ZbWKwL"
+            href="https://www.facebook.com/share/1Ha8SMLh1B/?mibextid=wwXIfr"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-violet-400"
@@ -111,7 +111,7 @@ const Footer = () => {
             <FaFacebook size={18} />
           </a>
           <a
-            href="https://www.instagram.com/rokibwin?igsh=anU3ejd4dHFneDhi"
+            href="https://www.instagram.com/curtineshop?igsh=aTF3dHd0eTJjMjB0&utm_source=qr"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-violet-400"

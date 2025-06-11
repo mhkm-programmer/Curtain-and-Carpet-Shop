@@ -57,7 +57,7 @@ const ContactBubble = () => {
       <div className="fixed bottom-32 right-4 md:right-6 flex flex-col items-center space-y-3 z-50">
         {/* WhatsApp */}
         <a
-          href="https://wa.me/+97455760872"
+          href="https://wa.me/+97466675946"
           target="_blank"
           rel="noopener noreferrer"
           className={`${baseBtnClass} bg-green-500 hover:bg-green-600`}
@@ -67,7 +67,7 @@ const ContactBubble = () => {
 
         {/* Phone */}
         <a
-          href="tel:+97455760872"
+          href="tel:+97466675946"
           className={`${baseBtnClass} bg-blue-500 hover:bg-blue-600`}
         >
           <FaPhoneAlt size={iconSize} />
@@ -75,7 +75,7 @@ const ContactBubble = () => {
 
         {/* Email */}
         <a
-          href="mailto:qatarwintrading@gmail.com"
+          href="mailto:rashed.khan.rk143@gmail.com"
           className={`${baseBtnClass} bg-red-500 hover:bg-red-600`}
         >
           <FaEnvelope size={iconSize} />
@@ -83,7 +83,7 @@ const ContactBubble = () => {
 
         {/* Instagram */}
         <a
-          href="https://www.instagram.com/rokibwin?igsh=anU3ejd4dHFneDhi"
+          href="https://www.instagram.com/curtineshop?igsh=aTF3dHd0eTJjMjB0&utm_source=qr"
           target="_blank"
           rel="noopener noreferrer"
           className={`${baseBtnClass} bg-pink-500 hover:bg-pink-600`}
@@ -93,7 +93,7 @@ const ContactBubble = () => {
 
         {/* Facebook */}
         <a
-          href="https://www.facebook.com/profile.php?id=61573137238181&mibextid=ZbWKwL"
+          href="https://www.facebook.com/share/1Ha8SMLh1B/?mibextid=wwXIfr"
           target="_blank"
           rel="noopener noreferrer"
           className={`${baseBtnClass} bg-blue-700 hover:bg-blue-800`}

@@ -62,21 +62,6 @@ const Contact = () => {
               />
             </a>
           </div>
-
-          {/* <div className="h-[450px] w-full rounded-lg overflow-hidden">
-            <a
-              href="https://g.co/kgs/TvC8hir"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Shop Image"
-            >
-              <img
-                src="https://8upload.com/image/67ac615fba98c/WhatsApp_Image_2025-02-09_at_22.11.33_d335a3e9.jpg"
-                alt="Curtains and Carpets Shop"
-                className="w-full h-full object-contain rounded-lg"
-              />
-            </a>
-          </div> */}
         </motion.div>
 
         <motion.div
@@ -129,7 +114,7 @@ const Contact = () => {
               <FaPhoneAlt size={32} />
             </a>
             <a
-              href="https://www.facebook.com/profile.php?id=61573137238181&mibextid=ZbWKwL"
+              href="https://www.facebook.com/share/1Ha8SMLh1B/?mibextid=wwXIfr"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#8B5A2B] hover:text-[#6B4226]"
@@ -138,7 +123,7 @@ const Contact = () => {
               <FaFacebook size={32} />
             </a>
             <a
-              href="https://www.instagram.com/rokibwin?igsh=anU3ejd4dHFneDhi"
+              href="https://www.instagram.com/curtineshop?igsh=aTF3dHd0eTJjMjB0&utm_source=qr"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#8B5A2B] hover:text-[#6B4226]"
