@@ -8,7 +8,7 @@ import Home from "../pages/Home/Home";
 import AboutMePage from "../pages/about/AboutMePage";
 import ContactPage from "../pages/contact/ContactPage";
 import FaqPage from "../pages/FAQ/FaqPage";
-import ServicePage from "../pages/service/ServicePage";
+
 import Terms from "../pages/terms/Terms";
 import ErrorPage from "../pages/errorPage/ErrorPage";
 
@@ -30,6 +30,7 @@ import Shifting from "../Products/Shifting";
 import Wallpapers from "../Products/Wallpapers";
 
 import Barkia from "../Products/Barkia";
+import BlindsRoller from "../Products/BlindsRoller";
 
 const router = createBrowserRouter([
   {

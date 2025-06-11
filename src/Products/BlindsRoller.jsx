@@ -16,7 +16,7 @@ const BlindsRoller = () => {
       {/* Meta Title */}
       <PageTitle title="Roller Blinds | Curtains and Carpets Shop" />
 
-      {/* Banner */}
+      {/* Hero Section */}
       <ParallaxSection
         imagePath="https://8upload.com/image/67ab124cd2cfc/roller-banner.jpg"
         title="Roller Blinds"
@@ -25,7 +25,7 @@ const BlindsRoller = () => {
         subTitleClassName="text-[#B8860B]"
       />
 
-      {/* Intro */}
+      {/* Introduction */}
       <section className="max-w-6xl mx-auto px-6 py-16 text-center">
         <h2 className="text-4xl md:text-5xl font-bold text-[#B8860B] mb-6">
           Elegant Roller Blinds for Every Space
@@ -35,7 +35,7 @@ const BlindsRoller = () => {
         </p>
       </section>
 
-      {/* Gallery */}
+      {/* Gallery Section */}
       <section className="max-w-7xl mx-auto px-6 pb-20">
         <h3 className="text-2xl font-semibold text-center text-[#B8860B] mb-10">
           Roller Blinds Gallery
@@ -56,7 +56,7 @@ const BlindsRoller = () => {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* Call to Action */}
       <section className="py-20 bg-[#4A342E] text-white text-center px-6">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#B8860B]">
           Need Custom Roller Blinds?
@@ -64,11 +64,11 @@ const BlindsRoller = () => {
         <p className="text-lg mb-6">
           Contact us today for a free consultation, fabric samples, or installation schedule across Qatar.
         </p>
-       <a
+        <a
           href="https://wa.me/97466675946"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-[#25D366] text-[#1F1F1F]  font-semibold px-6 py-3 rounded-xl shadow hover:bg-[#1ebe5b] transition"
+          className="inline-block bg-[#25D366] text-[#1F1F1F] font-semibold px-6 py-3 rounded-xl shadow hover:bg-[#1ebe5b] transition"
         >
           Contact Us on WhatsApp
         </a>
