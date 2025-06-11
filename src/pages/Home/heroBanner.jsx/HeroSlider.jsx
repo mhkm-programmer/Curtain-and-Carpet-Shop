@@ -21,7 +21,7 @@ const HeroSlider = () => {
   const slides = [
     {
       type: "image",
-      src: "https://8upload.com/image/6841a9c551ebd/1080_13.jpg",
+      src: "https://8upload.com/image/6841a98848094/1080_6.jpg",
       title: "Luxurious Curtains Collection",
       subtitle: "Tailored elegance for modern living spaces.",
       buttons: [
@@ -65,7 +65,7 @@ const HeroSlider = () => {
     },
      {
       type: "image",
-      src: "https://8upload.com/image/6841a98848094/1080_6.jpg",
+      src: "https://8upload.com/image/6848c834c473f/Hero_Curtain2.jpeg",
         title: "Customized Curtain Fabrics",
       subtitle: "Elegant & functional designs tailored for you.",
       buttons: [
@@ -87,8 +87,8 @@ const HeroSlider = () => {
     },
     {
       type: "image",
-      src: "https://8upload.com/image/6841ab2679df6/1080_2.jpg",
-      title: "Premium Cabinet Designs",
+      src: "https://8upload.com/image/6848c8347289d/Hero_Curtain1.jpeg",
+      title: "Premium Curtains Designs",
       subtitle: "Soft textures, timeless comfort for every step.",
         buttons: [
         {
